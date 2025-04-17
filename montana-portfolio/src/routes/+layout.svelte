@@ -31,9 +31,9 @@
 <style>
     
     header {
-        background-color: #007bff;
+        background-color: #074244;
         padding: 1rem;
-        text-align: center;
+        text-align: right;
     }
     
     nav ul {
@@ -60,7 +60,7 @@
     }
     
     footer {
-        background-color: #343a40;
+        background-color: #074244;
         color: white;
         text-align: center;
         padding: 1rem;

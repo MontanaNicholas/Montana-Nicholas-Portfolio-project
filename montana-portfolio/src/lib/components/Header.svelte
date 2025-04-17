@@ -7,9 +7,10 @@
 <header>
     <!-- Logo -->
     <div class="logo">
-        
-            <img src="logo.png" alt="Website Logo">
-        
+        <a href="/">
+            <img src="/logo.png" alt="Website Logo"width="60" height="60">
+        </a>
+        <h1>Portfolio</h1>
     </div>
 
     <!-- Navigation -->
@@ -24,7 +25,6 @@
         display: flex; /* Enables Flexbox */
         align-items: center; /* Vertically centers the items */
         justify-content: space-between; /* Pushes logo to left, nav to right */
-        color: white;
         padding: 1rem;
     }
 

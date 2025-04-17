@@ -5,7 +5,7 @@
 
 <style>
     footer {
-        background-color: #343a40;
+        background-color: #074244;
         color: white;
         text-align: center;
         padding: 1rem;
@@ -22,4 +22,6 @@
             font-size: 0.9rem;
         }
     }
+
+
 </style>
