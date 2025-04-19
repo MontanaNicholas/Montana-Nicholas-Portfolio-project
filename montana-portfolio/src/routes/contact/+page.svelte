@@ -6,11 +6,21 @@
         })
     </script>
 
-    <h1> Contact Me</h1>
-    <p> Email <a href="mailto:Montana171204@gmail.com">Montana171204@gmail.com</a></p>
+<div class="page-bg"></div>
+<div class="contact"><img src="contact-title.png" alt="contact" width="500" height="60" ></div>
 
-    <style>
-        h1 {
-            color: red;
-        }
-    </style>
+<style>
+
+    .contact {
+    width: 60%;
+    position: fixed;
+    top: 15%;
+    margin-left: 20%;
+    transform: translateY(-50%);
+}
+
+.page-bg{ 
+    background-color: rgb(92, 0, 0);
+}
+
+</style>

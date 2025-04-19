@@ -5,14 +5,13 @@
 
 
 <header>
-    <!-- Logo -->
-    <div class="logo">
-        <a href="/">
-            <img src="/logo.png" alt="Website Logo"width="60" height="60">
-        </a>
-        <h1>Portfolio</h1>
-    </div>
-
+   <!-- Logo -->
+   <div class="logo">
+    <a href="/">
+        <img src="/logo1.png" alt="Website Logo">
+    </a>
+    <h1>Lilac</h1>
+</div>
     <!-- Navigation -->
     <Navigation />
 </header>
@@ -21,13 +20,15 @@
 <style>
     /* Header Styling */
     header {
-        background-image: linear-gradient(rgb(7, 62, 71), rgb(14, 84, 95), rgb(22, 97, 109), rgb(29, 114, 128));
+        background-color:rgb(7, 62, 71);
         display: flex; /* Enables Flexbox */
         align-items: center; /* Vertically centers the items */
         justify-content: space-between; /* Pushes logo to left, nav to right */
         padding: 1rem;
+        color: white;
     }
 
+    
     /* Logo Container */
     .logo {
         display: flex; /* Makes logo container a Flexbox */
@@ -59,5 +60,6 @@
             justify-content: left;
         }
     }
+
 
 </style>

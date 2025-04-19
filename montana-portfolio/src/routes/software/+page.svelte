@@ -6,10 +6,26 @@
     })
 </script>
 
-<h1>Software</h1>
+<div class="page-bg"></div>
+<div class="software"><img src="sodtware-title.png" alt="software" width="500" height="60" ></div>
 
 <style>
-    h1 {
-        color: red;
-    }
+
+    .software {
+    width: 60%;
+    position: fixed;
+    top: 15%;
+    margin-left: 20%;
+    transform: translateY(-50%);
+}
+
+.page-bg{ 
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(92, 0, 0);
+    z-index: -1; 
+}
 </style>
