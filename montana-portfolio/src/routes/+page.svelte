@@ -14,6 +14,7 @@
 
 
 
+
 <div class="profile-pic">
 <div class="cat"><img src="spin.gif" alt="cat"width="580" height="580" ></div>
 </div>
@@ -23,6 +24,8 @@
   </div>
 
   <button class="about">ABOUT ME</button>
+  <a href="/about" class="about">ABOUT ME</a>
+
 
 <!-- FONTS -->
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
@@ -84,24 +87,25 @@
 }
 
 .about {
-    position: fixed;
-    top: 75%;
-    margin-left: -42%;
-    font-family: 'Press Start 2P', cursive;
-    font-size: 25px;
-    background: #004f4f;
-    border: 4px solid #ffffff;
-    padding: 0.75rem 1.5rem;
-    border-radius: 25px;
-    color: #ffffff;
-    cursor: pointer;
+  position: fixed;
+  top: 75%;
+  margin-left: -42%;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 25px;
+  background: #004f4f;
+  border: 4px solid #ffffff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none; /* removes the underline */
+  display: inline-block;
+  text-align: center;
+}
 
-  }
-
-  .about:hover {
-    background: #0ba7b3;
-    box-shadow: 2px 2px 0 #003838;
-  }
-
+.about:hover {
+  background: #0ba7b3;
+  box-shadow: 2px 2px 0 #003838;
+}
   
 </style>

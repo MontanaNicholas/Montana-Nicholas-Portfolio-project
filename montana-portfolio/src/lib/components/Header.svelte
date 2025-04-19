@@ -8,9 +8,9 @@
    <!-- Logo -->
    <div class="logo">
     <a href="/">
-        <img src="/logo1.png" alt="Website Logo">
+        <img src="/logo.png" alt="Website Logo">
     </a>
-    <h1>Lilac</h1>
+    <h1>Portfolio</h1>
 </div>
     <!-- Navigation -->
     <Navigation />
