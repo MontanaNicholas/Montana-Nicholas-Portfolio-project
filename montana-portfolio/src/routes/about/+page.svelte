@@ -22,7 +22,11 @@
 
     <div class="about"><img src="about.png" alt="about" width="500" height="60" ></div>
 
+
+    <div class="person"><img src="cartoon-me.png" alt="person" width="230" height="490" ></div>
+
 <div class="page-bg"></div>
+
 
 
 <style>
@@ -34,6 +38,14 @@
     margin-left: 20%;
     transform: translateY(-50%);
 }
+
+.person {
+    position: fixed;
+    top: 55%;
+    margin-left: 80%;
+    transform: translateY(-50%);
+}
+
 
 .me {
     position: fixed;
@@ -71,7 +83,7 @@
     transform: translateY(-50%);
     width: 500px; 
     height: 350px;
-    background-color: #064e53;
+    background-color: rgb(150, 28, 69);
     border: 5px solid #ffffff;
     border-radius: 4px;
     padding: 40px;
@@ -85,7 +97,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgb(92, 0, 0);
+    background-color: rgb(255, 249, 249);
     z-index: -10; 
 }
 </style>

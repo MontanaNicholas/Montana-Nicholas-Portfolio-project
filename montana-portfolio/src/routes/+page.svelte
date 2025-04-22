@@ -45,7 +45,7 @@
     top: 55%;
     margin-left: 30%;
     font-family: 'Press Start 2P';
-    color: white;
+    color: rgb(105, 8, 49);
   }
 
 
@@ -72,9 +72,8 @@
     transform: translateY(-50%);
     width: 450px;
     height: 450px;
-    background-color: white;
     border-radius: 50%;
-    border: 4px solid black;
+    border: 4px solid rgb(150, 28, 69);
   }
 .page-bg{ 
     position: fixed;
@@ -82,7 +81,7 @@
     left: 0;
     height: 100vh;
     width: 100vw;
-    background-color: rgb(92, 0, 0);
+    background-color:  rgb(255, 248, 246);
     z-index: -1; 
 }
 
@@ -92,7 +91,7 @@
   margin-left: -42%;
   font-family: 'Press Start 2P', cursive;
   font-size: 25px;
-  background: #004f4f;
+  background: rgb(150, 28, 69);
   border: 4px solid #ffffff;
   padding: 0.75rem 1.5rem;
   border-radius: 25px;

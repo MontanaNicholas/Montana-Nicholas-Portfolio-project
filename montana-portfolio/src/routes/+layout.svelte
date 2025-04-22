@@ -6,6 +6,14 @@
 
 <!-- Header -->
 <header>
+     <!-- Logo -->
+   <div class="logo">
+    <a href="/">
+        <img src="/logo.png" alt="Website Logo">
+    </a>
+    <h1>Montana Nicholas</h1>
+</div>
+    
     <nav>
         <ul>
             <li><a href="/">Home</a></li>
@@ -15,6 +23,8 @@
             <li><a href="/contact">Contact</a></li>
         </ul>
     </nav>
+
+   
 </header>
 
 <!-- Page Content -->
@@ -29,11 +39,51 @@
 
 
 <style>
+
+     /* Header Styling */
+     header {
+        background-color: rgb(105, 8, 49);
+        display: flex; /* Enables Flexbox */
+        align-items: center; /* Vertically centers the items */
+        justify-content: space-between; /* Pushes logo to left, nav to right */
+        padding: 2px;
+        color: white;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
     
-    header {
-        background-color: #074244;
-        padding: 1rem;
-        text-align: right;
+    /* Logo Container */
+    .logo {
+        display: flex; /* Makes logo container a Flexbox */
+        align-items: center; /* Aligns text and image vertically */
+    }
+
+    .logo img {
+        width: 90px;
+        margin-left: 10px;
+        opacity: 1;
+        transition: 0.2s ease-in-out;
+    }
+
+    .logo img:hover {
+        width: 85px;
+        margin-left: 13px;
+        opacity: 0.9;
+        margin-left: 1px;
+}
+
+    /* Mobile: Center logo and stack items */
+    @media (max-width: 768px) {
+        header {
+            flex-direction: column; /* Stacks items vertically */
+            text-align: center;
+        }
+
+        .logo {
+            justify-content: left;
+        }
     }
     
     nav ul {
@@ -60,7 +110,7 @@
     }
     
     footer {
-        background-color: #074244;
+        background-color: rgb(105, 8, 49);
         color: white;
         text-align: center;
         padding: 1rem;

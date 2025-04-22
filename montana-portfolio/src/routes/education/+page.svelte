@@ -25,7 +25,7 @@
     left: 0;
     height: 100vh;
     width: 100vw;
-    background-color: rgb(92, 0, 0);
+    background-color:  rgb(255, 248, 246);
     z-index: -1; 
 }
 </style>
