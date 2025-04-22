@@ -23,7 +23,7 @@
     <div class="about"><img src="about.png" alt="about" width="500" height="60" ></div>
 
 
-    <div class="person"><img src="cartoon-me.png" alt="person" width="230" height="490" ></div>
+    <div class="person"><img src="cartoon-me.png" alt="person" width="270" height="580" ></div>
 
 <div class="page-bg"></div>
 

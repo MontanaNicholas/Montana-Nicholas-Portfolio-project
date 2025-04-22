@@ -10,7 +10,7 @@
 </script>
 
 <div class="page-bg"></div>
-<div class="portfolio"><img src="portfolio.png" alt="portfolio" width="1200" height="150" ></div>
+<div class="portfolio"><img src="portfolio3.png" alt="portfolio" width="1200" height="150" ></div>
 
 
 
