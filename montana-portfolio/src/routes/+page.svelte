@@ -12,15 +12,12 @@
 <div class="page-bg"></div>
 <div class="portfolio"><img src="portfolio3.png" alt="portfolio" width="1200" height="150" ></div>
 
-
-
-
 <div class="profile-pic">
 <div class="cat"><img src="spin.gif" alt="cat"width="580" height="580" ></div>
 </div>
 
   <div class="portfolio-text">
-    <p>GRAPHIC DESIGN - DIGITAL ART - CONCEPT ART</p>
+    <span class="typewriter">GRAPHIC DESIGN - DIGITAL ART - CONCEPT ART</span>
   </div>
 
   <button class="about">ABOUT ME</button>
@@ -32,20 +29,31 @@
 
 <style>
 
+@keyframes typing {
+  from { width: 0 }
+  to { width: 190% }
+}
 
+@keyframes blink {
+  50% { border-color: transparent; }
+}
   .portfolio-text {
     text-align: center;
     max-width: 600px;
   }
 
-  p {
+  .typewriter {
     position: fixed;
     font-weight: bold;
     font-size: 20px;
     top: 55%;
-    margin-left: 30%;
+    margin-left: 15%;
     font-family: 'Press Start 2P';
     color: rgb(105, 8, 49);
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 5s steps(40, end), blink 0.5s step-end infinite;
+    border-right: 2px solid #600020;
   }
 
 
