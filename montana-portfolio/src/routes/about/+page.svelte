@@ -36,10 +36,11 @@
 
     <div class="about"><img src="about.png" alt="about" width="500" height="60" ></div>
 
+    <div class="parallax parallax--fast"></div>
 
     <div class="person"><img src="cartoon-me.png" alt="person" width="270" height="580" ></div>
 
-<div class="page-bg"></div>
+    <div class="page-bg"></div>
 
 
 
@@ -52,6 +53,16 @@
     margin-left: 35%;
     transform: translateY(-50%);
 }
+.parallax {
+  position: fixed; inset: 0; pointer-events: none;
+  background: url('/sparkle.png') repeat;
+  animation: slide 60s linear infinite;
+  opacity: .15;
+  z-index: -1; 
+}
+.parallax--fast { animation-duration: 30s; opacity:.25; }
+@keyframes slide { from{background-position:0 0} to{background-position:-2048px 0} }
+
 
 .person {
     position: fixed;

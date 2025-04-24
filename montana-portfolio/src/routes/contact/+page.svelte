@@ -9,7 +9,6 @@
 
 <div class="page-bg"></div>
 
-
     <div class="details">
 
         <section class="contact">
@@ -18,27 +17,31 @@
             <ul class="contact__icons">
                 <li class="contact__item">
                     <img src="instagram.png" alt="instagram" />
-                    <span>Instagram</span>
+                    <a href="https://www.instagram.com/_tiny__things" target="_blank" rel="noopener">
+                        Instagram
+                      </a>
                   </li>
               
                   <li class="contact__item">
                     <img src="mail.png" alt="mail" />
-                    <span>Mail</span>
+                    <span>Mn171204@gmail.com</span>
                   </li>
               
                   <li class="contact__item">
                     <img src="call.png" alt="Call" />
-                    <span>Call</span>
+                    <span>0858628356</span>
                   </li>
 
                   <li class="contact__item">
                     <img src="linkedin.png" alt="linkedin" />
-                    <span>Linkedin</span>
+                    <span>Montana Nicholas</span>
                   </li>
             </ul>
           </section>
         
         </div>
+        
+        <div class="parallax parallax--fast"></div>
    
 <style>
 
@@ -46,7 +49,7 @@
 .details {
     position: fixed;
     top: 55%;
-    margin-left: 30%;
+    margin-left: 32%;
     transform: translateY(-50%);
     width: 550px; 
     height: 400px;
@@ -57,6 +60,17 @@
     border-radius: 25px;
 
 }
+
+.parallax {
+  position: fixed; inset: 0; pointer-events: none;
+  background: url('/sparkle.png') repeat;
+  animation: slide 60s linear infinite;
+  opacity: .15;
+  z-index: -1; 
+}
+.parallax--fast { animation-duration: 30s; opacity:.25; }
+@keyframes slide { from{background-position:0 0} to{background-position:-2048px 0} }
+
 
 .contact {
 
@@ -72,7 +86,7 @@
   margin: 3rem 0 0;            
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 15px;                
 }
 
@@ -82,17 +96,25 @@
 }
 
 .contact__item {
-  display: flex;
-  align-items: center;      /* vertical alignment of icon & text */
-  gap: 1rem;                /* space between icon and its label   */
-  font: 700 1.1rem 'Press Start 2P', sans-serif; /* pixel font    */
-  color: #ffffff;
-  text-shadow: 0 2px #000;
+  display:flex;
+  align-items:center;
+  gap:1rem;
+  font:700 1.1rem 'Press Start 2P',sans-serif;
+  color:#fff;
+  text-shadow:0 2px #000;
 }
 
 .contact__item img {
   width: 60px;              
 
+}
+
+.contact__item a{
+  color:#fff;
+  text-decoration:none;          
+}
+.contact__item a:hover{
+  text-decoration:underline;      
 }
 
 .page-bg{ 

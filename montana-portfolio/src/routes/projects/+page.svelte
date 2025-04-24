@@ -2,12 +2,16 @@
     import { onMount } from 'svelte';
 
     onMount(() => {
-        console.log("Software Page Loaded");
+        console.log("Projects Page Loaded");
     })
 </script>
 
+
+
 <div class="page-bg"></div>
 <div class="projects"><img src="project.png" alt="project" width="500" height="60" ></div>
+
+<div class="parallax parallax--fast"></div>
 
 <style>
 
@@ -18,6 +22,18 @@
     margin-left: 20%;
     transform: translateY(-50%);
 }
+
+.parallax {
+  position: fixed; inset: 0; pointer-events: none;
+  background: url('/sparkle.png') repeat;
+  animation: slide 60s linear infinite;
+  opacity: .15;
+  z-index: -1; 
+}
+
+.parallax--fast { animation-duration: 30s; opacity:.25; }
+@keyframes slide { from{background-position:0 0} to{background-position:-2048px 0} }
+
 
 .page-bg{ 
     position: fixed;

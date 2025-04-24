@@ -96,6 +96,7 @@
     width: 450px;
     height: 450px;
     border-radius: 50%;
+    background-color:  rgb(255, 248, 246);
     border: 4px solid rgb(150, 28, 69);
   }
 .page-bg{ 
