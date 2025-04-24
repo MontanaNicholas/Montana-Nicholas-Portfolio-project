@@ -41,6 +41,8 @@
         
         </div>
         
+        <div class="person"><img src="cartoon-me.png" alt="person" width="175" height="420" ></div>
+
         <div class="parallax parallax--fast"></div>
    
 <style>
@@ -52,13 +54,20 @@
     margin-left: 32%;
     transform: translateY(-50%);
     width: 550px; 
-    height: 400px;
+    height: 450px;
     background-color: rgb(150, 28, 69);
     border: 5px solid #ffffff;
     border-radius: 4px;
     padding: 40px;
     border-radius: 25px;
 
+}
+
+.person {
+    position: fixed;
+    top: 60%;
+    margin-left: 55%;
+    transform: translateY(-50%);
 }
 
 .parallax {
@@ -87,7 +96,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 15px;                
+  gap: 15px;   
+  margin-left: -20%;             
 }
 
 .contact__icons img {

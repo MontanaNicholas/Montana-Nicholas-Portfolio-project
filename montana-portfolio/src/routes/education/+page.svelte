@@ -9,7 +9,19 @@
 
 
 <div class="page-bg"></div>
-<div class="education"><img src="education-title.png" alt="education" width="500" height="60" ></div>
+
+
+<div class="details">
+
+ <div class="education"><img src="education-title.png" alt="education" width="500" height="60" ></div>
+      
+</div>
+
+<div class="details2">
+
+    <div class="volunteering"><img src="volunteering.png" alt="volunteering" width="500" height="60" ></div>
+         
+   </div>
 
 <div class="parallax parallax--fast"></div>
 
@@ -19,8 +31,44 @@
     width: 60%;
     position: fixed;
     top: 15%;
-    margin-left: 20%;
+    margin-left: 5%;
     transform: translateY(-50%);
+}
+
+.volunteering {
+    width: 60%;
+    position: fixed;
+    top: 15%;
+    margin-left: 5%;
+    transform: translateY(-50%);
+}
+
+.details {
+    position: fixed;
+    top: 55%;
+    margin-left: 10%;
+    transform: translateY(-50%);
+    width: 550px; 
+    height: 400px;
+    background-color: rgb(150, 28, 69);
+    border-radius: 4px;
+    padding: 40px;
+    border-radius: 25px;
+
+}
+
+.details2 {
+    position: fixed;
+    top: 55%;
+    margin-left: 55%;
+    transform: translateY(-50%);
+    width: 550px; 
+    height: 400px;
+    background-color: rgb(150, 28, 69);
+    border-radius: 4px;
+    padding: 40px;
+    border-radius: 25px;
+
 }
 
 .parallax {

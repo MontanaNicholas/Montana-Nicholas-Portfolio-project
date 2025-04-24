@@ -20,15 +20,38 @@
     
     </div>
 
+
+    
     <div class="details">
 
         <section class="software">
-        <div class="pic"><img src="sodtware-title.png" alt="software" width="150" height="30"></div>
+        <div class="pic"><img src="sodtware-title.png" alt="software" width="400" height="50"></div>
           
             <ul class="software__icons">
-              <li><img src="krita.png"   alt="Krita"  /></li>
-              <li><img src="blender.png" alt="Blender"/></li>
-              <li><img src="aseprite.png" alt="Aseprite"/></li>
+                <li class="software__item">
+                    <img src="krita.png" alt="krita" />
+                    <span>Krita</span>
+                  </li>
+              
+                  <li class="software__item">
+                    <img src="aseprite.png" alt="aseprite" />
+                    <span>Aseprite</span>
+                  </li>
+              
+                  <li class="software__item">
+                    <img src="blender.png" alt="blender" />
+                    <span>Blender</span>
+                  </li>
+
+                  <li class="software__item">
+                    <img src="vs.png" alt="VSC" />
+                    <span>Visual Studio Code</span>
+                  </li>
+
+                  <li class="software__item">
+                    <img src="adobe.png" alt="adobe" />
+                    <span>Adobe Animate</span>
+                  </li>
             </ul>
           </section>
         
@@ -38,7 +61,7 @@
 
     <div class="parallax parallax--fast"></div>
 
-    <div class="person"><img src="cartoon-me.png" alt="person" width="270" height="580" ></div>
+    
 
     <div class="page-bg"></div>
 
@@ -46,37 +69,33 @@
 
 <style>
 
-    .about {
-    width: 60%;
+.about {
+    width: 0%;
     position: fixed;
     top: 25%;
-    margin-left: 35%;
+    margin-left: 43%;
     transform: translateY(-50%);
 }
+
 .parallax {
-  position: fixed; inset: 0; pointer-events: none;
-  background: url('/sparkle.png') repeat;
-  animation: slide 60s linear infinite;
-  opacity: .15;
-  z-index: -1; 
+    position: fixed; inset: 0; pointer-events: none;
+    background: url('/sparkle.png') repeat;
+    animation: slide 60s linear infinite;
+    opacity: .15;
+    z-index: -1; 
 }
+
 .parallax--fast { animation-duration: 30s; opacity:.25; }
 @keyframes slide { from{background-position:0 0} to{background-position:-2048px 0} }
 
 
-.person {
-    position: fixed;
-    top: 55%;
-    margin-left: 80%;
-    transform: translateY(-50%);
-}
 
 .details {
     position: fixed;
     top: 55%;
-    margin-left: 40%;
+    margin-left: 75%;
     transform: translateY(-50%);
-    width: 100px; 
+    width: 300px; 
     height: 350px;
     background-color: rgb(150, 28, 69);
     border-radius: 4px;
@@ -86,25 +105,40 @@
 }
 
 .software {
-  display: flex;
-  flex-direction: column;
-  align-items: center;         
-  height: 100vh;               
+    position: fixed;
+    top: 38%;
+    margin-left: -10%;
+    transform: translateY(-50%);          
 }
 
 .software__icons {
-  list-style: none;
-  padding: 0;
-  margin: 3rem 0 0;            
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2.5rem;                
+    list-style: none;
+    padding: 0;
+    margin: 3rem 0 0;            
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;   
+    margin-left: 5%; 
+              
 }
 
 .software__icons img {
-  width: 65px;                 
-  image-rendering: pixelated;
+    width: 50px;  
+}
+
+.software__item {
+  display:flex;
+  align-items:center;
+  gap:1rem;
+  font:700 1.1rem 'Press Start 2P',sans-serif;
+  color:#fff;
+  text-shadow:0 2px #000;
+}
+
+.software__item img {
+  width: 60px;              
+
 }
 
 .me {
@@ -126,7 +160,7 @@
     border: 4px solid  rgb(150, 28, 69);
   }
 
-  p{
+p {
     font-weight: bold;
     font-size: 27px;
     font-family: 'Press Start 2P';
@@ -135,15 +169,14 @@
 
   }
 
-  .box {
-
+.box {
     position: fixed;
     top: 55%;
-    margin-left: 50%;
+    margin-left: 40%;
     transform: translateY(-50%);
     width: 500px; 
     height: 350px;
-    background-color: rgb(150, 28, 69);
+    background-color:rgb(150, 28, 69);
     border: 5px solid #ffffff;
     border-radius: 4px;
     padding: 40px;

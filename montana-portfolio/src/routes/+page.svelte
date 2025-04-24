@@ -20,7 +20,7 @@
 <div class="parallax parallax--fast"></div>
 
   <div class="portfolio-text">
-    <span class="typewriter">GRAPHIC DESIGN - DIGITAL ART - CONCEPT ART</span>
+    <span class="typewriter">WEB DESIGN - DIGITAL ART - CONCEPT ART</span>
   </div>
 
   <button class="about">ABOUT ME</button>
