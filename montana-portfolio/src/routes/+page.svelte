@@ -16,6 +16,9 @@
 <div class="cat"><img src="spin.gif" alt="cat"width="580" height="580" ></div>
 </div>
 
+
+<div class="parallax parallax--fast"></div>
+
   <div class="portfolio-text">
     <span class="typewriter">GRAPHIC DESIGN - DIGITAL ART - CONCEPT ART</span>
   </div>
@@ -37,6 +40,18 @@
 @keyframes blink {
   50% { border-color: transparent; }
 }
+
+.parallax {
+  position: fixed; inset: 0; pointer-events: none;
+  background: url('/sparkle.png') repeat;
+  animation: slide 60s linear infinite;
+  opacity: .15;
+  z-index: -1; 
+}
+.parallax--fast { animation-duration: 30s; opacity:.25; }
+@keyframes slide { from{background-position:0 0} to{background-position:-2048px 0} }
+
+
   .portfolio-text {
     text-align: center;
     max-width: 600px;
