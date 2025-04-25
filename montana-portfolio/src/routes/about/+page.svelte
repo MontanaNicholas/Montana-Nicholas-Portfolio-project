@@ -61,7 +61,7 @@
 
     <div class="parallax parallax--fast"></div>
 
-    
+    <div class="box2"></div>
 
     <div class="page-bg"></div>
 

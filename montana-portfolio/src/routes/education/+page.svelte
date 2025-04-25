@@ -17,10 +17,24 @@
       
 </div>
 
+<div class="box">
+    <h4>2018-2023</h4>
+    <p> Loreto Secondary School, Kilkenny</p>
+    <h4>2023- PRESENT</h4>
+    <p> BSc (Hons) Computing in Interactive Digital Art and Design, SETU Carlow</p>
+</div>
+
 <div class="details2">
 
     <div class="volunteering"><img src="volunteering.png" alt="volunteering" width="500" height="60" ></div>
          
+   </div>
+
+   <div class="box2">
+    <h4>2024</h4>
+    <p> Kilkenny Animated</p>
+    <h4>2025</h4>
+    <p> Dingle Animation Festival</p>
    </div>
 
 <div class="parallax parallax--fast"></div>
@@ -43,6 +57,17 @@
     transform: translateY(-50%);
 }
 
+h4 {
+    font-size: 25px;
+    text-align: left;
+}
+
+p{
+    font-size: 20px;
+    text-align: left;
+    color: rgb(150, 28, 69);
+}
+
 .details {
     position: fixed;
     top: 55%;
@@ -57,6 +82,20 @@
 
 }
 
+.box {
+    position: fixed;
+    top: 60%;
+    margin-left: 12.5%;
+    transform: translateY(-50%);
+    width: 450px; 
+    height: 250px;
+    background-color: rgb(250, 241, 244);
+    border-radius: 4px;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+
 .details2 {
     position: fixed;
     top: 55%;
@@ -70,6 +109,21 @@
     border-radius: 25px;
 
 }
+
+.box2 {
+    position: fixed;
+    top: 60%;
+    margin-left: 58%;
+    transform: translateY(-50%);
+    width: 450px; 
+    height: 250px;
+    background-color: rgb(250, 241, 244);
+    border-radius: 4px;
+    padding: 20px;
+    border-radius: 25px;
+
+}
+
 
 .parallax {
   position: fixed; inset: 0; pointer-events: none;
