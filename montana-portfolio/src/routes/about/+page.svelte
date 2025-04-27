@@ -30,27 +30,27 @@
             <ul class="software__icons">
                 <li class="software__item">
                     <img src="krita.png" alt="krita" />
-                    <span>Krita</span>
+                    <span>KRITA</span>
                   </li>
               
                   <li class="software__item">
                     <img src="aseprite.png" alt="aseprite" />
-                    <span>Aseprite</span>
+                    <span>ASEPRITE</span>
                   </li>
               
                   <li class="software__item">
                     <img src="blender.png" alt="blender" />
-                    <span>Blender</span>
+                    <span>BLENDER</span>
                   </li>
 
                   <li class="software__item">
                     <img src="vs.png" alt="VSC" />
-                    <span>Visual Studio Code</span>
+                    <span>VISUAL STUDIO CODE</span>
                   </li>
 
                   <li class="software__item">
                     <img src="adobe.png" alt="adobe" />
-                    <span>Adobe Animate</span>
+                    <span>ADOBE ANIMATE</span>
                   </li>
             </ul>
           </section>
@@ -60,8 +60,6 @@
     <div class="about"><img src="about.png" alt="about" width="500" height="60" ></div>
 
     <div class="parallax parallax--fast"></div>
-
-    <div class="box2"></div>
 
     <div class="page-bg"></div>
 
@@ -163,10 +161,16 @@
 p {
     font-weight: bold;
     font-size: 27px;
-    font-family: 'Press Start 2P';
+    font-family: Candara;
     color: white;
     text-align: justify;
 
+  }
+
+  span {
+
+    font-family: Candara;
+    font-size: 20px;
   }
 
 .box {

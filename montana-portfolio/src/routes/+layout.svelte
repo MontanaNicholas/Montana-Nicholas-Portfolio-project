@@ -16,10 +16,10 @@
     
     <nav>
         <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/projects">Projects</a></li>
-            <li><a href="/education">Education & Volunteering</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/projects">PROJECTS</a></li>
+            <li><a href="/education">EDUCATION & VOLUNTEERING</a></li>
+            <li><a href="/contact">CONTACT</a></li>
         </ul>
     </nav>
 
@@ -33,7 +33,7 @@
 
 <!-- Footer -->
 <footer>
-    <p>&copy; 2025 My Svelte App. All rights reserved.</p>
+    <p>&copy; 2025 My Portfolio. All rights reserved.</p>
 </footer>
 
 
@@ -51,6 +51,11 @@
 
     h1 {
         font-size: 20px;
+        font-family: Candara;
+    }
+
+    p { 
+        font-family: Candara;
     }
     
     /* Logo Container */
@@ -101,6 +106,7 @@
         text-decoration: none;
         color: white;
         font-weight: bold;
+        font-family: Candara;
     }
     
     main {

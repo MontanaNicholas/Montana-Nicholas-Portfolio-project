@@ -18,7 +18,7 @@
                 <li class="contact__item">
                     <img src="instagram.png" alt="instagram" />
                     <a href="https://www.instagram.com/_tiny__things" target="_blank" rel="noopener">
-                        Instagram
+                        _tiny__things
                       </a>
                   </li>
               
@@ -109,7 +109,8 @@
   display:flex;
   align-items:center;
   gap:1rem;
-  font:700 1.1rem 'Press Start 2P',sans-serif;
+  font-family: Candara;
+  font-size: 25px;
   color:#fff;
   text-shadow:0 2px #000;
 }

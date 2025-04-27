@@ -60,12 +60,14 @@
 h4 {
     font-size: 25px;
     text-align: left;
+    font-family: Candara;
 }
 
 p{
     font-size: 20px;
     text-align: left;
     color: rgb(150, 28, 69);
+    font-family: Candara;
 }
 
 .details {

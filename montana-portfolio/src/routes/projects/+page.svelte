@@ -11,6 +11,17 @@
 <div class="page-bg"></div>
 <div class="projects"><img src="project.png" alt="project" width="500" height="60" ></div>
 
+<div class="button-container">
+    <div class="button-grid">
+      <a href="/game-design" class="project-button">GAME DESIGN</a>
+      <a href="/animation" class="project-button">ANIMATION</a>
+      <a href="/2d-digital-art" class="project-button">2D DIGITAL ART</a>
+      <a href="/web-design" class="project-button">WEB DESIGN</a>
+      <a href="/3d-digital-art" class="project-button">3D DIGITAL ART</a>
+      <a href="/handmade-crafts" class="project-button">HANDMADE CRAFTS</a>
+    </div>
+  </div>
+
 <div class="parallax parallax--fast"></div>
 
 <style>
@@ -18,9 +29,49 @@
     .projects {
     width: 60%;
     position: fixed;
-    top: 15%;
+    top: 20%;
     margin-left: 20%;
     transform: translateY(-50%);
+}
+
+.button-container {
+    background-color: rgb(150, 28, 69);
+    padding: 40px;
+    width: 600px; /* fixed width */
+    margin: 0 auto;
+    margin-top: 200px; 
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* two columns */
+    grid-gap: 30px 50px; /* vertical and horizontal space */
+}
+
+.project-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: rgb(150, 28, 69);
+    font-weight: bold;
+    font-size: 25px;
+    font-family: Candara;
+    padding: 15px;
+    height: 60px;
+    width: 220px; /* fixed button width */
+    border-radius: 10px;
+    text-decoration: none;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.project-button:hover {
+    transform: scale(1.05);
+    background-color: #f0f0f0;
 }
 
 .parallax {
