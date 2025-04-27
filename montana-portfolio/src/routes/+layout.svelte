@@ -65,18 +65,19 @@
     }
 
     .logo img {
-        width: 90px;
-        margin-left: 10px;
-        opacity: 1;
-        transition: 0.2s ease-in-out;
-    }
+    width: 90px;
+    margin-left: 10px;
+    opacity: 1;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
 
     .logo img:hover {
-        width: 85px;
-        margin-left: 13px;
-        opacity: 0.9;
-        margin-left: 1px;
+    opacity: 0.9;
+    transform: scale(0.85);
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
+
 
     /* Mobile: Center logo and stack items */
     @media (max-width: 768px) {
