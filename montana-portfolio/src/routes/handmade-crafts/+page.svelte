@@ -2,16 +2,26 @@
     import { onMount } from 'svelte';
 
     onMount(() => {
-        console.log("handmade crafts page Page Loaded");
+        console.log("handmade crafts Page Loaded");
     })
 </script>
 
 <div class="page-bg"></div>
 
+<div class="handmade-crafts"><img src="handmade-crafts.png" alt="ghandmade crafts" width="500" height="130" ></div>
+
 <div class="parallax parallax--fast"></div>
 
 
 <style>
+
+.handmade-crafts {
+    width: 60%;
+    position: fixed;
+    top: 20%;
+    margin-left: 20%;
+    transform: translateY(-50%);
+}
 
 .parallax {
   position: fixed; inset: 0; pointer-events: none;

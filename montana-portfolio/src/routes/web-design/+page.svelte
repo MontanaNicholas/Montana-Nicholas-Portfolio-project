@@ -8,10 +8,20 @@
 
 <div class="page-bg"></div>
 
+<div class="web-design"><img src="web-design.png" alt="web design" width="500" height="60" ></div>
+
 <div class="parallax parallax--fast"></div>
 
 
 <style>
+
+.web-design {
+    width: 60%;
+    position: fixed;
+    top: 20%;
+    margin-left: 20%;
+    transform: translateY(-50%);
+}
 
 .parallax {
   position: fixed; inset: 0; pointer-events: none;

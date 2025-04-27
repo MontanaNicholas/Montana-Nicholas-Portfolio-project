@@ -37,7 +37,7 @@
 .button-container {
     background-color: rgb(150, 28, 69);
     padding: 40px;
-    width: 600px; /* fixed width */
+    width: 700px; /* fixed width */
     margin: 0 auto;
     margin-top: 200px; 
     border-radius: 15px;
@@ -49,7 +49,7 @@
 .button-grid {
     display: grid;
     grid-template-columns: 1fr 1fr; /* two columns */
-    grid-gap: 30px 50px; /* vertical and horizontal space */
+    grid-gap: 45px 65px; /* vertical and horizontal space */
 }
 
 .project-button {
@@ -63,7 +63,7 @@
     font-family: Candara;
     padding: 15px;
     height: 60px;
-    width: 220px; /* fixed button width */
+    width: 220px; 
     border-radius: 10px;
     text-decoration: none;
     transition: transform 0.2s, background-color 0.2s;

@@ -129,7 +129,7 @@
   display:flex;
   align-items:center;
   gap:1rem;
-  font:700 1.1rem 'Press Start 2P',sans-serif;
+  font-family: Candara;
   color:#fff;
   text-shadow:0 2px #000;
 }

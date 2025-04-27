@@ -2,16 +2,26 @@
     import { onMount } from 'svelte';
 
     onMount(() => {
-        console.log("3d digital art page Page Loaded");
+        console.log("Game design page Page Loaded");
     })
 </script>
 
 <div class="page-bg"></div>
 
+<div class="three-d"><img src="3d-digital-art.png" alt="3d digital art" width="500" height="60" ></div>
+
 <div class="parallax parallax--fast"></div>
 
 
 <style>
+
+.three-d{
+    width: 60%;
+    position: fixed;
+    top: 20%;
+    margin-left: 20%;
+    transform: translateY(-50%);
+}
 
 .parallax {
   position: fixed; inset: 0; pointer-events: none;

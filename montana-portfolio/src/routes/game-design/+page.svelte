@@ -2,7 +2,7 @@
     import { onMount } from 'svelte';
 
     onMount(() => {
-        console.log("Game design page Page Loaded");
+        console.log("Game design Page Loaded");
     })
 </script>
 

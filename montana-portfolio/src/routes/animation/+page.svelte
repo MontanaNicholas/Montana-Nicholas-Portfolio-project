@@ -8,10 +8,20 @@
 
 <div class="page-bg"></div>
 
+<div class="animation"><img src="animation-title.png" alt="animation" width="500" height="60" ></div>
+
 <div class="parallax parallax--fast"></div>
 
 
 <style>
+
+.animation {
+    width: 60%;
+    position: fixed;
+    top: 20%;
+    margin-left: 20%;
+    transform: translateY(-50%);
+}
 
 .parallax {
   position: fixed; inset: 0; pointer-events: none;
