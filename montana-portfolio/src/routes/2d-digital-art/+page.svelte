@@ -25,6 +25,35 @@
         </div>
     </div>
 
+    <div class="card">
+        <img src="megan.png" alt="megan" class="project-image">
+        <div class="card-text">
+           <p><strong>Art Software:</strong> Krita</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="vit.png" alt="vit" class="project-image">
+        <div class="card-text">
+           <p><strong>Art Software:</strong> Krita</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="background.png" alt="background" class="project-image">
+        <div class="card-text">
+           <p><strong>Art Software:</strong> Krita</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="sean progress.png" alt="sean" class="project-image">
+        <div class="card-text">
+           <p><strong>Art Software:</strong> Krita</p>
+        </div>
+    </div>
+
+
     
 
 </div>
@@ -55,48 +84,37 @@
 .parallax--fast { animation-duration: 30s; opacity:.25; }
 @keyframes slide { from{background-position:0 0} to{background-position:-2048px 0} }
 
+/* Header */
 .header {
     text-align: center;
     margin-top: 40px;
 }
 
+/* Grid container */
 .grid {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0px; /* CHANGE this from 40px to 0px */
-    margin-top: 20px; /* Optional: make this smaller too */
-    padding-bottom: 50px; /* Optional: less space at bottom */
+    gap: 40px;
+    margin-top: 60px;
+    padding-bottom: 100px;
 }
 
+/* Card (image + text) */
 .card {
     display: flex;
     background-color: white;
-    border-left: 3px solid rgb(150, 28, 69);
-    border-right: 3px solid rgb(150, 28, 69);
-    border-top: 0;
-    border-bottom: 0;
-    border-radius: 0; /* No curves so they stack flush */
+    border: 3px solid rgb(150, 28, 69);
+    border-radius: 20px;
     overflow: hidden;
-    max-width: 1000px;
+    max-width: 1200px;
     width: 90%;
-    box-shadow: none; /* Optional: remove shadows if you want them glued */
-}
-
-.card:first-child {
-    border-top: 3px solid rgb(150, 28, 69);
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-.card:last-child {
-    border-bottom: 3px solid rgb(150, 28, 69);
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Project Image */
 .project-image {
-    width: 60%;
+    width: 50%;
     object-fit: cover;
 }
 
@@ -104,22 +122,28 @@
 .card-text {
     background-color: rgb(150, 28, 69);
     color: white;
-    padding: 20px;
-    width: 40%;
+    padding: 30px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-family: Candara;
-    text-align: center;
 }
 
 .card-text h2 {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
     font-size: 30px;
     margin-bottom: 10px;
+    font-family: Candara;
 }
 
 .card-text p {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
     font-size: 25px;
     text-align:justify;
+    margin-top: 0;
+    font-family: Candara;
+    
 }
+
 </style>
