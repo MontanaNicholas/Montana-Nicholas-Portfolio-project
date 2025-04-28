@@ -14,7 +14,6 @@
 
 <div class="grid">
     
-    <!-- First row -->
     <div class="card">
         <div class="card-section">
             <h3 class="section-title">MEDIUM FIDELITY PROTOTYPE</h3>
@@ -27,12 +26,11 @@
         </div>
     </div>
 
-    <!-- Add paragraph here! -->
     <div class="section-description">
         <p>Here I have Medium Fidelity and High Fidelity Prototypes I made to prepare for my portfolio website. I took some inspiration from other websites, to help me get an idea of layout, colour etc. I made sure to keep consistent with font, colour, spacing and overall design throughout the whole wesbite to ensure a appealing visual. I also incorporated a lot of my own designs, such as images/font used for titles, the logo, moving background etc to showcase some originality rigth at the get go.</p>
     </div>
 
-    <!-- Second row -->
+    
     <div class="card">
         <div class="card-section">
             <h3 class="section-title">MEDIUM FIDELITY PROTOTYPE</h3>
@@ -73,7 +71,6 @@
     z-index: -1; 
 }
 
-/* Header */
 .header {
     text-align: center;
     margin-top: 40px;
@@ -83,9 +80,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0px; /* CHANGE this from 40px to 0px */
-    margin-top: 20px; /* Optional: make this smaller too */
-    padding-bottom: 50px; /* Optional: less space at bottom */
+    gap: 0px; 
+    margin-top: 20px; 
+    padding-bottom: 50px;
 }
 
 .card {
@@ -105,7 +102,6 @@
     padding: 20px;
 }
 
-/* Wrap each side */
 .card-section {
     display: flex;
     flex-direction: column;
@@ -123,10 +119,10 @@
     color: rgb(90, 20, 40);
     font-family: 'Candara', sans-serif;
     padding: 30px 40px;
-    background: rgba(255, 255, 255, 0.8); /* semi-transparent white */
-    border: 3px solid rgb(150, 28, 69); /* Border color */
-    border-radius: 20px; /* Rounded corners */
-    box-shadow: 0 0 15px rgba(150, 28, 69, 0.8); /* Glow */
+    background: rgba(255, 255, 255, 0.8); 
+    border: 3px solid rgb(150, 28, 69); 
+    border-radius: 20px; 
+    box-shadow: 0 0 15px rgba(150, 28, 69, 0.8); 
     animation: pulse 3s infinite alternate, fadeInUp 1.5s ease forwards;
     opacity: 0;
     transform: translateY(20px);
@@ -138,7 +134,7 @@
     100% { box-shadow: 0 0 20px rgba(150, 28, 69, 1); }
 }
 
-/* Fade-in Animation */
+
 @keyframes fadeInUp {
     to {
         opacity: 1;
