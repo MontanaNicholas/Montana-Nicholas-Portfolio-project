@@ -7,6 +7,7 @@
   console.log("Home Page Loaded");
   });
 
+
 </script>
 
 <div class="page-bg"></div>

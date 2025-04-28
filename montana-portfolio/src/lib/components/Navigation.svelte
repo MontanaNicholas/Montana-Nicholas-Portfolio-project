@@ -80,7 +80,7 @@
             top: 90px;
             left: 0;
             width: 100%;
-            background: #6a1e73;
+            background: #720935;
             text-align: left;
             padding: 1rem 0;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
