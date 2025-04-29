@@ -65,18 +65,18 @@
     }
 
     .logo img {
-        width: 90px;
-        margin-left: 10px;
-        opacity: 1;
-        transition: 0.2s ease-in-out;
-    }
-
-    .logo img:hover {
-        width: 85px;
-        margin-left: 13px;
-        opacity: 0.9;
-        margin-left: 1px;
+    width: 90px;
+    margin-left: 10px;
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
 }
+
+.logo img:hover {
+    transform: scale(0.95);
+    opacity: 0.9;
+    cursor: pointer;
+}
+
 
     /* Mobile: Center logo and stack items */
     @media (max-width: 768px) {
