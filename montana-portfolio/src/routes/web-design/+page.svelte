@@ -26,9 +26,21 @@
         </div>
     </div>
 
+
+    <section class="info-secion">
+        <h2 class="info-title">Design Summary & Tools</h2>
     <div class="section-description">
-        <p>Here I have Medium Fidelity and High Fidelity Prototypes I made to prepare for my portfolio website. I took some inspiration from other websites, to help me get an idea of layout, colour etc. I made sure to keep consistent with font, colour, spacing and overall design throughout the whole wesbite to ensure a appealing visual. I also incorporated a lot of my own designs, such as images/font used for titles, the logo, moving background etc to showcase some originality rigth at the get go.</p>
+        <p>Here I have Medium Fidelity and High Fidelity Prototypes I made to prepare for my portfolio website.</p>
+        <p>I took some inspiration from other websites, to help me get an idea of layout, colour etc. I made sure to keep consistent with font, colour, spacing and overall design throughout the whole wesbite to ensure a appealing visual. </p>
+        <p>I also incorporated a lot of my own designs, such as images/font used for titles, the logo, moving background etc to showcase some originality rigth at the get go.</p>
+        
+        <div class="box">
+            <h4>Prototype Design Software: <span class="highlight">Penpot</span></h4>
+            <h4>Coding Software: <span class="highlight">Visual Studio Code / Svelte</span></h4>
+        </div>
     </div>
+
+</section>
 
     
     <div class="card">
@@ -109,6 +121,33 @@
     width: 50%;
 }
 
+.box {
+    background-color: rgb(250, 220, 230);
+    border-radius: 25px;
+    padding: 20px 30px;
+    margin-top: 30px; 
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 4px 12px rgba(150, 28, 69, 0.2);
+}
+
+.box h4 {
+    margin: 10px 0;
+    font-family: 'Candara', sans-serif;
+    color: rgb(150, 28, 69); 
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+
+
+.highlight {
+    font-size: 18px;
+    color: rgb(90, 20, 40); 
+    font-weight: normal;
+}
+
 
 .section-description {
     margin: 50px 0;
@@ -126,6 +165,8 @@
     animation: pulse 3s infinite alternate, fadeInUp 1.5s ease forwards;
     opacity: 0;
     transform: translateY(20px);
+    line-height: 1.6;
+    letter-spacing: 0.3px;
 }
 
 /* Glow Pulse Animation */
@@ -153,10 +194,26 @@
     letter-spacing: 1px;
 }
 
+.info-title {
+    font-family: 'Candara', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    color: rgb(90, 20, 40);
+    margin-bottom: 20px;
+}
+
+
+
 .project-image {
     width: 100%;
-    height: auto; 
-    object-fit: cover;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+}
+
+.project-image:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
 }
 
 </style>

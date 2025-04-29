@@ -47,7 +47,7 @@
         <img src="frog.png" alt="frog" class="project-image">
         <div class="card-text">
             <h2>Lilypad Loot</h2>
-            <p>This game was called "Lilypad Loot". The objective was to navigate across the river to reach the other side, while collecting coins and avoiding the rocks. Hitting a rock would cause the player to lose health (health bar displayed at the top of the screen) and collecting coins would add to the players 'score'.</p>
+            <p>This game was called "Lilypad Loot". The objective was to navigate across the river to reach the other side, while collecting coins and avoiding the rocks. Hitting a rock would cause the player to lose health (health bar displayed at the top of the screen) and collecting coins would add to the players 'score'. The joystick feature also made it playable on mobile devices.</p>
             <p><strong>Art Software:</strong> Aseprite<br><strong>Code Software:</strong> Visual Studio/SFML</p>
         </div>
     </div>
@@ -78,13 +78,13 @@
 .parallax--fast { animation-duration: 30s; opacity:.25; }
 @keyframes slide { from{background-position:0 0} to{background-position:-2048px 0} }
 
-/* Header */
+
 .header {
     text-align: center;
     margin-top: 40px;
 }
 
-/* Grid container */
+
 .grid {
     display: flex;
     flex-direction: column;
@@ -94,7 +94,6 @@
     padding-bottom: 100px;
 }
 
-/* Card (image + text) */
 .card {
     display: flex;
     background-color: white;
@@ -106,13 +105,11 @@
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Project Image */
 .project-image {
     width: 50%;
     object-fit: cover;
 }
 
-/* Text next to Image */
 .card-text {
     background-color: rgb(150, 28, 69);
     color: white;

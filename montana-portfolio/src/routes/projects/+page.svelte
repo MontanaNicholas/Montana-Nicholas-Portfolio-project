@@ -9,7 +9,10 @@
 
 
 <div class="page-bg"></div>
-<div class="projects"><img src="project.png" alt="project" width="500" height="60" ></div>
+
+<div class="header">
+    <img src="project.png" alt="project" width="500" height="60">
+</div>
 
 <div class="button-container">
     <div class="button-grid">
@@ -26,20 +29,14 @@
 
 <style>
 
-    .projects {
-    width: 60%;
-    position: fixed;
-    top: 20%;
-    margin-left: 20%;
-    transform: translateY(-50%);
-}
+
 
 .button-container {
     background-color: rgb(150, 28, 69);
     padding: 40px;
-    width: 700px; /* fixed width */
+    width: 700px;
     margin: 0 auto;
-    margin-top: 200px; 
+    margin-top: 100px; 
     border-radius: 15px;
     display: flex;
     justify-content: center;
@@ -48,8 +45,8 @@
 
 .button-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* two columns */
-    grid-gap: 45px 65px; /* vertical and horizontal space */
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 45px 65px; 
 }
 
 .project-button {
