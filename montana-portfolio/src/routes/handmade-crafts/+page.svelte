@@ -14,20 +14,53 @@
 
 <div class="grid-gallery">
     <div class="card">
-        <img src="megan.png" alt="Character Design" class="project-image">
+        <img src="blueberry.jpg" alt="blueberry" class="project-image">
     </div>
 
     <div class="card">
-        <img src="megan.png" alt="Enemy Concept" class="project-image">
+        <img src="cherry.jpg" alt="cherry " class="project-image">
     </div>
 
     <div class="card">
-        <img src="megan.png" alt="Fight Concept" class="project-image">
+        <img src="chili.jpg" alt="chili" class="project-image">
     </div>
 
     <div class="card">
-        <img src="megan.png" alt="Another Concept" class="project-image">
+        <img src="lemon.jpg" alt="lemon" class="project-image">
     </div>
+
+    <div class="card">
+        <img src="donut.jpg" alt="donut" class="project-image">
+    </div>
+
+    <div class="card">
+        <img src="croissant.jpg" alt="croissant" class="project-image">
+    </div>
+
+    <div class="card">
+        <img src="waffle.jpg" alt="waffle" class="project-image">
+    </div>
+
+    <div class="card">
+        <img src="hotdog.jpg" alt="hotdog" class="project-image">
+    </div>
+
+    <div class="card">
+        <img src="lilypadp.jpg" alt="lilypad " class="project-image">
+    </div>
+
+    <div class="card">
+        <img src="choc-cake.jpg" alt="cake" class="project-image">
+    </div>
+
+    <div class="card">
+        <img src="lilypadw.jpg" alt="lilypad" class="project-image">
+    </div>
+
+    <div class="card">
+        <img src="candycane.jpg" alt="candycane" class="project-image">
+    </div>
+
 </div>
 
 <div class="parallax parallax--fast"></div>
@@ -37,10 +70,10 @@
 
 .grid-gallery {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
-    gap: 40px; /* Space between cards */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 40px;
     padding: 60px;
-    justify-items: center; /* Center cards */
+    justify-items: center; 
 }
 
 .card {
@@ -48,15 +81,18 @@
     border: 3px solid rgb(150, 28, 69);
     border-radius: 20px;
     overflow: hidden;
-    width: 90%; /* Control width inside the grid cell */
-    max-width: 500px;
+    width: 90%; 
+    max-width: 350px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .project-image {
     width: 100%;
-    height: 600px; /* Fixed height for consistent layout */
-    object-fit: cover;
+    max-height: 400px; /* adjust as needed */
+    object-fit: contain;
+    display: block;
+    padding: 10px; /* optional, adds spacing inside the card */
+    box-sizing: border-box;
 }
 
 
