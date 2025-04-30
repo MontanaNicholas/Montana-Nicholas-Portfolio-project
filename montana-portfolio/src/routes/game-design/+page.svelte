@@ -105,15 +105,18 @@
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+
 .project-image {
     width: 50%;
     object-fit: cover;
 }
 
-.project-image:hover {
-    transform: scale(1.02);
-    transition: transform 0.3s ease;
-}
+
 
 .card-text {
     background-color: rgb(150, 28, 69);
