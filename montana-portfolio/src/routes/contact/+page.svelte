@@ -70,6 +70,7 @@
     transform: translateY(-50%);
 }
 
+
 .parallax {
   position: fixed; inset: 0; pointer-events: none;
   background: url('/sparkle.png') repeat;

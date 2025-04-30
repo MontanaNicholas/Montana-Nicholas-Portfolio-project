@@ -68,7 +68,9 @@
 
 .project-button:hover {
     transform: scale(1.05);
-    background-color: #f0f0f0;
+    background-color: #ffe4ec;
+
+    
 }
 
 .parallax {

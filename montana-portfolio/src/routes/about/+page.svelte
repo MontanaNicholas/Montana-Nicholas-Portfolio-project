@@ -139,12 +139,18 @@
 
 }
 
+.software__item:hover {
+    transform: scale(1.3);
+    transition: transform 0.3s ease;
+}
+
 .me {
     position: fixed;
     top: 50%;
     margin-left: 2.5%;
     transform: translateY(-50%);
 }
+
 
 .profile-pic {
     position: fixed;

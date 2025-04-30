@@ -18,19 +18,14 @@
 
 
 <style>
-     /* Header Styling */
-     header {
-        background-color: rgb(105, 8, 49);
+    /* Header Styling */
+    header {
+        background-color:rgb(85, 8, 55);
         display: flex; /* Enables Flexbox */
         align-items: center; /* Vertically centers the items */
         justify-content: space-between; /* Pushes logo to left, nav to right */
-        padding: 2px;
+        padding: 1rem;
         color: white;
-    }
-
-    h1 {
-        font-size: 20px;
-        font-family: Candara;
     }
 
     
@@ -41,17 +36,17 @@
     }
 
     .logo img {
-    width: 90px;
-    margin-left: 10px;
-    opacity: 1;
-    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
-}
-
+        width: 95px;
+        margin-right: 10px;
+        opacity: 1;
+        transition: 0.2s ease-in-out;
+    }
 
     .logo img:hover {
-    opacity: 0.9;
-    transform: scale(0.85);
-    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+        width: 80px;
+        margin-right: 13px;
+        opacity: 0.9;
+        margin-left: 1px;
 }
 
     /* Mobile: Center logo and stack items */

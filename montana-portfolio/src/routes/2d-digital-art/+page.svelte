@@ -40,12 +40,6 @@
       </div>
     </div>
   
-    <div class="card card--short" style="grid-area: background;">
-        <img src="background.png" alt="background" class="project-image">
-        <div class="card-text">
-          <h3><strong>Art Software Used:</strong> Krita</h3>
-        </div>
-      </div>
       
     <div class="card" style="grid-area: sean;">
         <img src="sean progress.png" alt="sean" class="project-image">
@@ -116,19 +110,6 @@
     box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
 }
 
-.card--short {
-  height: 250px; 
-}
-
-.card--short .project-image {
-  height: 70%;    
-  object-fit: cover;
-}
-
-.card--short .card-text {
-  height: 30%;   
-  padding: 10px;
-}
 
 .card--megan {
   height: 500px; 

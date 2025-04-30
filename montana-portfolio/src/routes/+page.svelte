@@ -122,13 +122,13 @@
   border-radius: 25px;
   color: #ffffff;
   cursor: pointer;
-  text-decoration: none; /* removes the underline */
+  text-decoration: none; 
   display: inline-block;
   text-align: center;
 }
 
 .about:hover {
-  background: #0ba7b3;
+  background: #f81c5e;
   box-shadow: 2px 2px 0 #003838;
 }
   
