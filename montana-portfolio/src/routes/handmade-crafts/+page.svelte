@@ -61,6 +61,18 @@
         <img src="candycane.jpg" alt="candycane" class="project-image">
     </div>
 
+    <div class="card">
+        <img src="orange.jpg" alt="oraneg" class="project-image">
+    </div>
+
+    <div class="card">
+        <img src="pumpkin.jpg" alt="pumpkin" class="project-image">
+    </div>
+
+    <div class="card">
+        <img src="cake.jpg" alt="cake" class="project-image">
+    </div>
+
 </div>
 
 <div class="parallax parallax--fast"></div>
@@ -82,8 +94,13 @@
     border-radius: 20px;
     overflow: hidden;
     width: 90%; 
-    max-width: 350px;
+    max-width: 280px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
 }
 
 .project-image {
@@ -94,6 +111,7 @@
     padding: 10px; /* optional, adds spacing inside the card */
     box-sizing: border-box;
 }
+
 
 
 .parallax {

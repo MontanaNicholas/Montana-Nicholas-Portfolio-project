@@ -110,6 +110,11 @@
     object-fit: cover;
 }
 
+.project-image:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
 .card-text {
     background-color: rgb(150, 28, 69);
     color: white;
