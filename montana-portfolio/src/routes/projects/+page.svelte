@@ -17,7 +17,7 @@
 <div class="button-container">
     <div class="button-grid">
       <a href="/game-design" class="project-button">GAME DESIGN</a>
-      <a href="/animation" class="project-button">ANIMATION</a>
+      <a href="/pixel-art" class="project-button">PIXEL ART</a>
       <a href="/2d-digital-art" class="project-button">2D DIGITAL ART</a>
       <a href="/web-design" class="project-button">WEB DESIGN</a>
       <a href="/3d-digital-art" class="project-button">3D DIGITAL ART</a>
