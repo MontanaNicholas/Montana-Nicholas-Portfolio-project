@@ -1,6 +1,8 @@
 <script>
-    import { onMount } from 'svelte';
-  import { browser } from '$app/environment';
+
+import { base } from '$app/paths';
+import { onMount } from 'svelte';
+import { browser } from '$app/environment';
 
  
   onMount(async () => {
@@ -11,10 +13,10 @@
 </script>
 
 <div class="page-bg"></div>
-<div class="portfolio"><img src="portfolio3.png" alt="portfolio" width="1200" height="150" ></div>
+<div class="portfolio"><img src="{base}/portfolio3.png" alt="portfolio" width="1200" height="150" ></div>
 
 <div class="profile-pic">
-<div class="cat"><img src="spin.gif" alt="cat"width="580" height="580" ></div>
+<div class="cat"><img src="{base}/spin.gif" alt="cat"width="580" height="580" ></div>
 </div>
 
 
@@ -25,11 +27,11 @@
   </div>
 
   <button class="about">ABOUT ME</button>
-  <a href="/about" class="about">ABOUT ME</a>
+  <a href="{base}/about" class="about">ABOUT ME</a>
 
 
 <!-- FONTS -->
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link href="{base}/https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
 <style>
 

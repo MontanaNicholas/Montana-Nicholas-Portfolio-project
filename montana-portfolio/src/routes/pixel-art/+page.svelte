@@ -1,6 +1,7 @@
 <script>
-    import { onMount } from 'svelte';
-
+  import { base } from '$app/paths';
+  import { onMount } from 'svelte';
+  import { browser } from '$app/environment';
     onMount(() => {
         console.log("Pixel Art page Page Loaded");
     })
@@ -9,27 +10,27 @@
 <div class="page-bg"></div>
 
 <div class="header">
-    <img src="pixel-art.png" alt="Pixel Art" width="500" height="60">
+    <img src="{base}/pixel-art.png" alt="Pixel Art" width="500" height="60">
 </div>
 
 <div class="gif-gallery">
    
     <div class="gif-row">
-        <div class="gif-card"><img src="player_walk.gif" alt="walk"><p>Walk</p></div>
-        <div class="gif-card"><img src="player_idle.gif" alt="idle"><p>Idle</p></div>
-        <div class="gif-card"><img src="player_shoot.gif" alt="shoot"><p>Shoot</p></div>
-        <div class="gif-card"><img src="player_expire.gif" alt="expire"><p>Expire</p></div>
+        <div class="gif-card"><img src="{base}/player_walk.gif" alt="walk"><p>Walk</p></div>
+        <div class="gif-card"><img src="{base}/player_idle.gif" alt="idle"><p>Idle</p></div>
+        <div class="gif-card"><img src="{base}/player_shoot.gif" alt="shoot"><p>Shoot</p></div>
+        <div class="gif-card"><img src="{base}/player_expire.gif" alt="expire"><p>Expire</p></div>
     </div>
 
     <div class="gif-row">
-        <div class="gif-card"><img src="flyEnemy_fly.gif" alt="fly"><p>Fly Enemy</p></div>
-        <div class="gif-card"><img src="flyEnemy_expire.gif" alt="enemy expire"><p>Enemy Expire</p></div>
-        <div class="gif-card"><img src="fly_idle.gif" alt="idle 2"><p>Fly Idle</p></div>
+        <div class="gif-card"><img src="{base}/flyEnemy_fly.gif" alt="fly"><p>Fly Enemy</p></div>
+        <div class="gif-card"><img src="{base}/flyEnemy_expire.gif" alt="enemy expire"><p>Enemy Expire</p></div>
+        <div class="gif-card"><img src="{base}/fly_idle.gif" alt="idle 2"><p>Fly Idle</p></div>
     </div>
 
     <div class="gif-row single">
         <div class="gif-card small">
-            <img src="bounce.gif" alt="bounce">
+            <img src="{base}/bounce.gif" alt="bounce">
             <p>Bounce</p>
         </div>
     </div>

@@ -1,6 +1,5 @@
 <script>
-    // Import components
-    
+     import { base } from '$app/paths';
 </script>
 
 
@@ -8,18 +7,18 @@
 <header>
      <!-- Logo -->
    <div class="logo">
-    <a href="/">
-        <img src="/logo.png" alt="Website Logo">
+    <a href="{base}/">
+        <img src="{base}/logo.png" alt="Website Logo">
     </a>
     <h1>Montana Nicholas</h1>
 </div>
     
     <nav>
         <ul>
-            <li><a href="/">HOME</a></li>
-            <li><a href="/projects">PROJECTS</a></li>
-            <li><a href="/education">EDUCATION & VOLUNTEERING</a></li>
-            <li><a href="/contact">CONTACT</a></li>
+            <li><a href="{base}/">HOME</a></li>
+            <li><a href="{base}/projects">PROJECTS</a></li>
+            <li><a href="{base}/education">EDUCATION & VOLUNTEERING</a></li>
+            <li><a href="{base}/contact">CONTACT</a></li>
         </ul>
     </nav>
 
