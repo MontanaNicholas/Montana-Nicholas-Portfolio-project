@@ -1,65 +1,50 @@
 <script>
-    // import Navigation.svelte from lib folder
-    import { Navigation } from "$lib"
-</script>
-
-
-<header>
-   <!-- Logo -->
-   <div class="logo">
-    <a href="/">
-        <img src="/logo.png" alt="Website Logo">
-    </a>
-    <h1>Montana Nicholas</h1>
-</div>
-    <!-- Navigation -->
-    <Navigation />
-</header>
-
-
-<style>
-    /* Header Styling */
+    import { base } from '$app/paths';
+    import Navigation from '$lib/components/Navigation.svelte';  // Correctly import Navigation.svelte
+  </script>
+  
+  <header>
+    <!-- Logo Section -->
+    <div class="logo">
+      <a href="/">
+        <img src="/logo.png" alt="Website Logo" />
+      </a>
+      <h1>Montana Nicholas</h1>
+    </div>
+  
+    <!-- Navigation Component -->
+    <Navigation /> <!-- This is where the burger menu comes from -->
+  </header>
+  
+  <style>
     header {
-        background-color:rgb(85, 8, 55);
-        display: flex; /* Enables Flexbox */
-        align-items: center; /* Vertically centers the items */
-        justify-content: space-between; /* Pushes logo to left, nav to right */
-        padding: 1rem;
-        color: white;
+      background-color: rgb(85, 8, 55);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem;
+      color: white;
     }
-
-    
-    /* Logo Container */
+  
     .logo {
-        display: flex; /* Makes logo container a Flexbox */
-        align-items: center; /* Aligns text and image vertically */
+      display: flex;
+      align-items: center;
     }
-
+  
     .logo img {
-        width: 95px;
-        margin-right: 10px;
-        opacity: 1;
-        transition: 0.2s ease-in-out;
+      width: 90px;
+      margin-right: 10px;
     }
-
-    .logo img:hover {
-        width: 80px;
-        margin-right: 13px;
-        opacity: 0.9;
-        margin-left: 1px;
-}
-
-    /* Mobile: Center logo and stack items */
+  
     @media (max-width: 768px) {
-        header {
-            flex-direction: column; /* Stacks items vertically */
-            text-align: center;
-        }
-
-        .logo {
-            justify-content: left;
-        }
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+  
+      .logo {
+        justify-content: center;
+      }
     }
-
-
-</style>
+  </style>
+  

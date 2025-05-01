@@ -1,5 +1,8 @@
 <script>
      import { base } from '$app/paths';
+     import { onMount } from 'svelte';
+  import { browser } from '$app/environment';
+  
 </script>
 
 
