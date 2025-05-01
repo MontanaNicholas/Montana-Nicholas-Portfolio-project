@@ -1,5 +1,17 @@
 <script>
-    import { onMount } from 'svelte';
+  import { base } from '$app/paths';
+  import { onMount } from 'svelte';
+  import { browser } from '$app/environment';
+
+  function goBack() {
+    if (history.length > 1) {
+      history.back();
+    } else {
+      // fallback route if no history
+      window.location.href = '/';
+    }
+  }
+
 
     onMount(() => {
         console.log("web design page Page Loaded");
@@ -9,20 +21,25 @@
 <div class="page-bg"></div>
 
 <div class="header">
-    <img src="web-design.png" alt="web Design" width="500" height="60">
+    <img src="{base}/web-design.png" alt="web Design" width="500" height="60">
 </div>
+
+<button on:click={goBack} class="back-button">
+    ⬅ Go Back
+</button>
+
 
 <div class="grid">
     
     <div class="card">
         <div class="card-section">
             <h3 class="section-title">MEDIUM FIDELITY PROTOTYPE</h3>
-            <img src="board1.png" alt="board1" class="project-image">
+            <img src="{base}/board1.png" alt="board1" class="project-image">
         </div>
 
         <div class="card-section">
             <h3 class="section-title">HIGH FIDELITY PROTOTYPE</h3>
-            <img src="board4.png" alt="board4" class="project-image">
+            <img src="{base}/board4.png" alt="board4" class="project-image">
         </div>
     </div>
 
@@ -46,12 +63,12 @@
     <div class="card">
         <div class="card-section">
             <h3 class="section-title">MEDIUM FIDELITY PROTOTYPE</h3>
-            <img src="board2.png" alt="board2" class="project-image">
+            <img src="{base}/board2.png" alt="board2" class="project-image">
         </div>
 
         <div class="card-section">
             <h3 class="section-title">HIGH FIDELITY PROTOTYPE</h3>
-            <img src="board5.png" alt="board5" class="project-image">
+            <img src="{base}/board5.png" alt="board5" class="project-image">
         </div>
     </div>
 
@@ -114,6 +131,23 @@
     padding: 20px;
 }
 
+.back-button {
+    padding: 10px 20px;
+    background-color: #961c45;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 20px;
+  }
+
+  .back-button:hover {
+    background-color: #7a1738;
+  }
+
+  
 .card-section {
     display: flex;
     flex-direction: column;

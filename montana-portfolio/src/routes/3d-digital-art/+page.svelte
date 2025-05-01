@@ -1,5 +1,17 @@
 <script>
-    import { onMount } from 'svelte';
+  import { base } from '$app/paths';
+  import { onMount } from 'svelte';
+  import { browser } from '$app/environment';
+
+  function goBack() {
+    if (history.length > 1) {
+      history.back();
+    } else {
+      // fallback route if no history
+      window.location.href = '/';
+    }
+  }
+
 
     onMount(() => {
         console.log("3d digital art Page Loaded");
@@ -9,47 +21,51 @@
 <div class="page-bg"></div>
 
 <div class="header">
-    <img src="3d-digital-art.png" alt="3d digital art" width="500" height="60">
+    <img src="{base}/3d-digital-art.png" alt="3d digital art" width="500" height="60">
 </div>
+
+<button on:click={goBack} class="back-button">
+    ⬅ Go Back
+</button>
 
 <div class="gallery-grid">
     <div class="card">
-        <img src="3D-fridge.png" alt="fridge" class="project-image">
+        <img src="{base}/3D-fridge.png" alt="fridge" class="project-image">
         <div class="card-text">
             
         </div>
     </div>
 
     <div class="card">
-        <img src="3D-fridge2.png" alt="fridge" class="project-image">
+        <img src="{base}/3D-fridge2.png" alt="fridge" class="project-image">
         <div class="card-text">
             
         </div>
     </div>
 
     <div class="card">
-        <img src="3D-fridge3.png" alt="fridge" class="project-image">
+        <img src="{base}/3D-fridge3.png" alt="fridge" class="project-image">
         <div class="card-text">
            
         </div>
     </div>
 
     <div class="card">
-        <img src="3d-fridge5.png" alt="fridge" class="project-image">
+        <img src="{base}/3d-fridge5.png" alt="fridge" class="project-image">
         <div class="card-text">
             
         </div>
     </div>
 
     <div class="card">
-        <img src="3D-fridge4.png" alt="fridge" class="project-image">
+        <img src="{base}/3D-fridge4.png" alt="fridge" class="project-image">
         <div class="card-text">
 
         </div>
     </div>
     
     <div class="card">
-        <img src="3D-fridge6.png" alt="fridge" class="project-image">
+        <img src="{base}/3D-fridge6.png" alt="fridge" class="project-image">
         <div class="card-text">
           
         </div>
@@ -64,6 +80,23 @@
     text-align: center;
     margin-top: 40px;
 }
+
+
+.back-button {
+    padding: 10px 20px;
+    background-color: #961c45;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 20px;
+  }
+
+  .back-button:hover {
+    background-color: #7a1738;
+  }
 
 
 .gallery-grid {

@@ -1,5 +1,7 @@
 <script>
-    import { onMount } from 'svelte';
+  import { base } from '$app/paths';
+  import { onMount } from 'svelte';
+  import { browser } from '$app/environment';
 
     onMount(() => {
         console.log("About Page Loaded");
@@ -9,6 +11,7 @@
 <div class="profile-pic">
     <div class="me"><img src="me.png" alt="me"width="550" height="550" ></div>
 </div>
+
 
     <div class="box">
    
@@ -25,31 +28,31 @@
     <div class="details">
 
         <section class="software">
-        <div class="pic"><img src="sodtware-title.png" alt="software" width="400" height="50"></div>
+        <div class="pic"><img src="{base}/sodtware-title.png" alt="software" width="400" height="50"></div>
           
             <ul class="software__icons">
                 <li class="software__item">
-                    <img src="krita.png" alt="krita" />
+                    <img src="{base}/krita.png" alt="krita" />
                     <span>KRITA</span>
                   </li>
               
                   <li class="software__item">
-                    <img src="aseprite.png" alt="aseprite" />
+                    <img src="{base}/aseprite.png" alt="aseprite" />
                     <span>ASEPRITE</span>
                   </li>
               
                   <li class="software__item">
-                    <img src="blender.png" alt="blender" />
+                    <img src="{base}/blender.png" alt="blender" />
                     <span>BLENDER</span>
                   </li>
 
                   <li class="software__item">
-                    <img src="vs.png" alt="VSC" />
+                    <img src="{base}/vs.png" alt="VSC" />
                     <span>VISUAL STUDIO CODE</span>
                   </li>
 
                   <li class="software__item">
-                    <img src="adobe.png" alt="adobe" />
+                    <img src="{base}/adobe.png" alt="adobe" />
                     <span>ADOBE ANIMATE</span>
                   </li>
             </ul>
@@ -57,7 +60,7 @@
         
         </div>
 
-    <div class="about"><img src="about.png" alt="about" width="500" height="60" ></div>
+    <div class="about"><img src="{base}/about.png" alt="about" width="500" height="60" ></div>
 
     <div class="parallax parallax--fast"></div>
 

@@ -2,6 +2,17 @@
   import { base } from '$app/paths';
   import { onMount } from 'svelte';
   import { browser } from '$app/environment';
+
+  function goBack() {
+    if (history.length > 1) {
+      history.back();
+    } else {
+      // fallback route if no history
+      window.location.href = '/';
+    }
+  }
+
+
     onMount(() => {
         console.log("handmade crafts Page Loaded");
     })
@@ -12,6 +23,10 @@
 <div class="header">
     <img src="{base}/handmade-crafts.png" alt="handmade crafts" width="500" height="120">
 </div>
+
+<button on:click={goBack} class="back-button">
+    ⬅ Go Back
+</button>
 
 <div class="grid-gallery">
     <div class="card">
@@ -88,6 +103,23 @@
     padding: 60px;
     justify-items: center; 
 }
+
+.back-button {
+    padding: 10px 20px;
+    background-color: #961c45;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 20px;
+  }
+
+  .back-button:hover {
+    background-color: #7a1738;
+  }
+
 
 .card {
 

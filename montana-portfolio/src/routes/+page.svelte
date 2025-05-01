@@ -29,10 +29,6 @@ import { browser } from '$app/environment';
   <button class="about">ABOUT ME</button>
   <a href="{base}/about" class="about">ABOUT ME</a>
 
-
-<!-- FONTS -->
-<link href="{base}/https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-
 <style>
 
 @keyframes typing {
@@ -63,6 +59,7 @@ import { browser } from '$app/environment';
   .typewriter {
     position: fixed;
     font-weight: bold;
+    font-family: 'Candara', sans-serif;
     font-size: 20px;
     top: 55%;
     margin-left: 15%;
@@ -116,7 +113,7 @@ import { browser } from '$app/environment';
   position: fixed;
   top: 75%;
   margin-left: -42%;
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Candara', sans-serif;
   font-size: 25px;
   background: rgb(150, 28, 69);
   border: 4px solid #ffffff;
