@@ -64,6 +64,7 @@
     border-radius: 10px;
     text-decoration: none;
     transition: transform 0.2s, background-color 0.2s;
+    box-shadow: 5px 4px 0 #3d0317;
 }
 
 .project-button:hover {

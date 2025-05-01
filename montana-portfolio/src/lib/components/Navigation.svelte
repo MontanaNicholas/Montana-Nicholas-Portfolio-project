@@ -1,29 +1,27 @@
 <script>
-    let isOpen = false; // Menu state (open/closed)
+    let isOpen = false;
 </script>
 
-<!-- Navigation Container -->
 <nav class="nav">
-    <!-- Burguer Menu Button (Visible on Small Screens) -->
-    <button class="burger" on:click={() => isOpen = !isOpen} aria-label="Toggle navigation"> ☰ </button>
+    <button class="burger" on:click={() => isOpen = !isOpen} aria-label="Toggle navigation">☰</button>
 
-    <!-- Navigation Links -->
-    <ul class:open={isOpen}>
+    <ul class={`menu ${isOpen ? 'open' : ''}`}>
         <li><a href="/">Home</a></li>
-            <li><a href="/projects">Projects</a></li>
-            <li><a href="/education">Education & Volunteering</a></li>
-            <li><a href="/contact">Contact</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/education">Education & Volunteering</a></li>
+        <li><a href="/contact">Contact</a></li>
     </ul>
 </nav>
 
 <style>
-    /* Base Navigation Styling */
     .nav {
         padding: 1rem;
         text-align: center;
+        position: relative;
+
     }
 
-    .nav ul {
+    .menu {
         list-style: none;
         padding: 0;
         margin: 0;
@@ -31,29 +29,16 @@
         justify-content: center;
         gap: 20px;
         transition: 0.15s ease-in-out;
+        z-index: 15;
     }
 
-    .nav ul li {
-        display: inline-block;
-        transition: 0.15s ease-in-out;
-    }
-
-    .nav ul li a {
+    .menu li a {
         text-decoration: none;
         color: white;
         font-weight: bold;
-        opacity: 1;
-        transition: 0.15s ease-in-out;
-    }
-    .nav ul li a:hover {
-        opacity: 0.9;
-        text-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
-    }
-    .nav ul li:hover {
-        transform: translateY(1px);
     }
 
-    /* 🍔 Burger Menu (Hidden on Large Screens) */
+
     .burger {
         display: none;
         font-size: 2rem;
@@ -63,34 +48,32 @@
         color: white;
         position: absolute;
         top: 1rem;
-        left: 1rem;
+        left: 90%;
+        z-index: 20;
     }
 
-    /* Mobile Navigation: Show Burger Menu */
     @media (max-width: 768px) {
         .burger {
-            display: block; /* Show burger icon */
-            left: 90%;
+            display: block;
         }
 
-        .nav ul {
-            display: none; /* Hide menu by default */
+        .menu {
+            display: none;
             flex-direction: column;
             position: absolute;
             top: 90px;
             left: 0;
             width: 100%;
-            background: #720935;
+            background: #6a1e73;
             text-align: left;
             padding: 1rem 0;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        .nav ul.open {
-            display: flex; /* Show menu when isOpen is true */
+        .menu.open {
+            display: flex;
         }
 
-        .nav ul li {
+        .menu li {
             padding: 10px 20px;
         }
     }

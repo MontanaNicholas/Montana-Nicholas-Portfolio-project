@@ -35,19 +35,19 @@
     </div>
 
     <div class="card">
-        <img src="3D-fridge4.png" alt="fridge" class="project-image">
-        <div class="card-text">
-
-        </div>
-    </div>
-
-    <div class="card">
         <img src="3d-fridge5.png" alt="fridge" class="project-image">
         <div class="card-text">
             
         </div>
     </div>
 
+    <div class="card">
+        <img src="3D-fridge4.png" alt="fridge" class="project-image">
+        <div class="card-text">
+
+        </div>
+    </div>
+    
     <div class="card">
         <img src="3D-fridge6.png" alt="fridge" class="project-image">
         <div class="card-text">
