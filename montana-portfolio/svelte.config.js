@@ -9,7 +9,7 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		paths: {
-			base: dev ? '' : `/${Montana-Nicholas-Portfolio-project}`
+			base: dev ? '' : `/${repoName}`
 		},
 	}
 };
