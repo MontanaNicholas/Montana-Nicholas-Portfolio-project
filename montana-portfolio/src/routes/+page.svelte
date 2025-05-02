@@ -23,7 +23,7 @@ import { browser } from '$app/environment';
 <div class="parallax parallax--fast"></div>
 
   <div class="portfolio-text">
-    <span class="typewriter">WEB DESIGN - DIGITAL ART - CONCEPT ART</span>
+    <span class="typewriter">WEB DESIGN - DIGITAL ART - CONCEPT ART.....</span>
   </div>
 
   <button class="about">ABOUT ME</button>
@@ -60,10 +60,9 @@ import { browser } from '$app/environment';
     position: fixed;
     font-weight: bold;
     font-family: 'Candara', sans-serif;
-    font-size: 20px;
+    font-size: 30px;
     top: 55%;
     margin-left: 15%;
-    font-family: 'Press Start 2P';
     color: rgb(105, 8, 49);
     overflow: hidden;
     white-space: nowrap;

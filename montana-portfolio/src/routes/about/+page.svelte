@@ -132,9 +132,9 @@
   display:flex;
   align-items:center;
   gap:1rem;
-  font-family: Candara;
+  font-family: 'Candara', sans-serif;
   color:#fff;
-  text-shadow:0 2px #000;
+ 
 }
 
 .software__item img {
@@ -168,9 +168,9 @@
   }
 
 p {
-    font-weight: bold;
+    
     font-size: 27px;
-    font-family: Candara;
+     font-family: 'Candara', sans-serif;
     color: white;
     text-align: justify;
 
@@ -178,7 +178,7 @@ p {
 
   span {
 
-    font-family: Candara;
+    font-family: 'Candara', sans-serif;
     font-size: 20px;
   }
 

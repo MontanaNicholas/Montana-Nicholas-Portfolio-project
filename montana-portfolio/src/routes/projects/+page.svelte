@@ -1,5 +1,7 @@
 <script>
-    import { onMount } from 'svelte';
+  import { base } from '$app/paths';
+  import { onMount } from 'svelte';
+  import { browser } from '$app/environment';
 
     onMount(() => {
         console.log("Projects Page Loaded");
@@ -11,17 +13,17 @@
 <div class="page-bg"></div>
 
 <div class="header">
-    <img src="project.png" alt="project" width="500" height="60">
+    <img src="{base}/project.png" alt="project" width="500" height="60">
 </div>
 
 <div class="button-container">
     <div class="button-grid">
-      <a href="/game-design" class="project-button">GAME DESIGN</a>
-      <a href="/pixel-art" class="project-button">PIXEL ART</a>
-      <a href="/2d-digital-art" class="project-button">2D DIGITAL ART</a>
-      <a href="/web-design" class="project-button">WEB DESIGN</a>
-      <a href="/3d-digital-art" class="project-button">3D DIGITAL ART</a>
-      <a href="/handmade-crafts" class="project-button">HANDMADE CRAFTS</a>
+      <a href="{base}/game-design" class="project-button">GAME DESIGN</a>
+      <a href="{base}/pixel-art" class="project-button">PIXEL ART</a>
+      <a href="{base}/2d-digital-art" class="project-button">2D DIGITAL ART</a>
+      <a href="{base}/web-design" class="project-button">WEB DESIGN</a>
+      <a href="{base}/3d-digital-art" class="project-button">3D DIGITAL ART</a>
+      <a href="{base}/handmade-crafts" class="project-button">HANDMADE CRAFTS</a>
     </div>
   </div>
 
