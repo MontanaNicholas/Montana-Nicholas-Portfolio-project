@@ -1,5 +1,9 @@
 <script>
-    import { onMount } from 'svelte';
+
+import { base } from '$app/paths';
+  import { onMount } from 'svelte';
+  import { browser } from '$app/environment';
+
 
     onMount(() => {
         console.log("Education Page Loaded");
@@ -13,7 +17,7 @@
 
 <div class="details">
 
- <div class="education"><img src="education-title.png" alt="education" width="500" height="60" ></div>
+ <div class="education"><img src="{base}/education-title.png" alt="education" width="500" height="60" ></div>
       
 </div>
 
@@ -26,7 +30,7 @@
 
 <div class="details2">
 
-    <div class="volunteering"><img src="volunteering.png" alt="volunteering" width="500" height="60" ></div>
+    <div class="volunteering"><img src="{base}/volunteering.png" alt="volunteering" width="500" height="60" ></div>
          
    </div>
 
@@ -125,6 +129,12 @@ p{
     border-radius: 25px;
 
 }
+
+.box h4:first-child,
+.box2 h4:first-child {
+    margin-top: -5px;
+}
+
 
 
 .parallax {

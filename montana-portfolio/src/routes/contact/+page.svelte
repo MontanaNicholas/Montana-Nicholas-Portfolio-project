@@ -1,5 +1,10 @@
 <script>
-    import { onMount } from 'svelte';
+
+import { base } from '$app/paths';
+  import { onMount } from 'svelte';
+  import { browser } from '$app/environment';
+
+
 
     onMount(() => {
         console.log("Contact Page Loaded");
@@ -12,28 +17,28 @@
     <div class="details">
 
         <section class="contact">
-        <div class="pic"><img src="contact-title.png" alt="contact" width="350" height="60"></div>
+        <div class="pic"><img src="{base}/contact-title.png" alt="contact" width="350" height="60"></div>
           
             <ul class="contact__icons">
                 <li class="contact__item">
-                    <img src="instagram.png" alt="instagram" />
-                    <a href="https://www.instagram.com/_tiny__things" target="_blank" rel="noopener">
+                    <img src="{base}/instagram.png" alt="instagram" />
+                    <a href="{base}/https://www.instagram.com/_tiny__things" target="_blank" rel="noopener">
                         _tiny__things
                       </a>
                   </li>
               
                   <li class="contact__item">
-                    <img src="mail.png" alt="mail" />
+                    <img src="{base}/mail.png" alt="mail" />
                     <span>Mn171204@gmail.com</span>
                   </li>
               
                   <li class="contact__item">
-                    <img src="call.png" alt="Call" />
+                    <img src="{base}/call.png" alt="Call" />
                     <span>0858628356</span>
                   </li>
 
                   <li class="contact__item">
-                    <img src="linkedin.png" alt="linkedin" />
+                    <img src="{base}/linkedin.png" alt="linkedin" />
                     <span>Montana Nicholas</span>
                   </li>
             </ul>
@@ -41,7 +46,7 @@
         
         </div>
         
-        <div class="person"><img src="cartoon-me.png" alt="person" width="175" height="420" ></div>
+        <div class="person"><img src="{base}/cartoon-me.png" alt="person" width="175" height="420" ></div>
 
         <div class="parallax parallax--fast"></div>
    

@@ -9,7 +9,7 @@
 </script>
 
 <div class="profile-pic">
-    <div class="me"><img src="me.png" alt="me"width="550" height="550" ></div>
+    <div class="me"><img src="{base}/me.png" alt="me"width="550" height="550" ></div>
 </div>
 
 

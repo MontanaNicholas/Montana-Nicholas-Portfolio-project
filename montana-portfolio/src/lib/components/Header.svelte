@@ -6,8 +6,8 @@
   <header>
     <!-- Logo Section -->
     <div class="logo">
-      <a href="/">
-        <img src="/logo.png" alt="Website Logo" />
+      <a href="{base}/">
+        <img src="{base}/logo.png" alt="Website Logo" />
       </a>
       <h1>Montana Nicholas</h1>
     </div>
