@@ -67,156 +67,385 @@
 
 <style>
   .body-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 6rem;
-    padding: 2rem;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6rem;
+  padding: 2rem;
+}
 
-  .profile-pic {
-    width: 580px;
-    height: 580px;
-    background-color: white;
-    border-radius: 50%;
-    border: 4px solid rgb(150, 28, 69);
-  }
+/* Responsive profile image container */
+.profile-pic {
+  width: 580px;
+  height: 580px;
+  background-color: white;
+  border-radius: 50%;
+  border: 4px solid rgb(150, 28, 69);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .me img {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-  }
+.me img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
 
-  .box {
-    display: flex;
+/* Main text box */
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 350px;
+  background-color: rgb(150, 28, 69);
+  border: 5px solid #ffffff;
+  border-radius: 25px;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Software details container */
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 300px;
+  height: 350px;
+  background-color: rgb(150, 28, 69);
+  border-radius: 25px;
+  padding: 40px;
+}
+
+.details .pic {
+  position: absolute;
+  top: -75px;
+}
+
+.software__icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.software__item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: 'Candara', sans-serif;
+  color: #fff;
+}
+
+.software__item img {
+  width: 60px;
+}
+
+.software__item:hover {
+  transform: scale(1.3);
+  transition: transform 0.3s ease;
+}
+
+.about {
+  width: 100%;
+  text-align: center;
+}
+
+.about img {
+  max-width: 100%;
+  height: auto;
+}
+
+.parallax {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: url('/sparkle.png') repeat;
+  animation: slide 60s linear infinite;
+  opacity: 0.15;
+  z-index: -1;
+}
+
+.parallax--fast {
+  animation-duration: 30s;
+  opacity: 0.25;
+}
+
+.page-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(255, 249, 249);
+  z-index: -10;
+}
+
+p {
+  font-size: 27px;
+  font-family: 'Candara', sans-serif;
+  color: white;
+  text-align: justify;
+}
+
+span {
+  font-family: 'Candara', sans-serif;
+  font-size: 20px;
+}
+
+@keyframes slide {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -2048px 0;
+  }
+}
+
+/* 🔁 Responsive Adjustments */
+@media (max-width: 1024px) {
+  .body-container {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 500px;
-    height: 350px;
-    background-color: rgb(150, 28, 69);
-    border: 5px solid #ffffff;
-    border-radius: 25px;
-    padding: 40px;
-    text-align: center;
+    gap: 3rem;
   }
 
+  .profile-pic,
+  .box,
   .details {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 300px;
-    height: 350px;
-    background-color: rgb(150, 28, 69);
-    border-radius: 25px;
-    padding: 40px;
+    width: 90%;
+    max-width: 500px;
+    height: auto;
+  }
+
+  .box, .details {
+    padding: 20px;
   }
 
   .details .pic {
-    position: absolute;
-    top: -75px;
+    position: relative;
+    top: 0;
+    margin-bottom: 1rem;
   }
 
   .software__icons {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .software__item {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    font-family: 'Candara', sans-serif;
-    color: #fff;
+    flex-direction: column;
+    text-align: center;
   }
 
   .software__item img {
-    width: 60px;
-  }
-
-  .software__item:hover {
-    transform: scale(1.3);
-    transition: transform 0.3s ease;
-  }
-
-  .about {
-    width: 100%;
-  }
-
-  .about img {
-    width: 500px;
-    height: auto;
-  }
-
-  .parallax {
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    background: url('/sparkle.png') repeat;
-    animation: slide 60s linear infinite;
-    opacity: 0.15;
-    z-index: -1;
-  }
-
-  .parallax--fast {
-    animation-duration: 30s;
-    opacity: 0.25;
-  }
-
-  .page-bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgb(255, 249, 249);
-    z-index: -10;
+    width: 50px;
   }
 
   p {
-    font-size: 27px;
-    font-family: 'Candara', sans-serif;
-    color: white;
-    text-align: justify;
-  }
-
-  span {
-    font-family: 'Candara', sans-serif;
     font-size: 20px;
   }
 
-  @keyframes slide {
-    from {
-      background-position: 0 0;
-    }
-    to {
-      background-position: -2048px 0;
-    }
+  span {
+    font-size: 16px;
+  }
+}
+.body-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6rem;
+  padding: 2rem;
+}
+
+/* Responsive profile image container */
+.profile-pic {
+  width: 580px;
+  height: 580px;
+  background-color: white;
+  border-radius: 50%;
+  border: 4px solid rgb(150, 28, 69);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.me img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* Main text box */
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 350px;
+  background-color: rgb(150, 28, 69);
+  border: 5px solid #ffffff;
+  border-radius: 25px;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Software details container */
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 300px;
+  height: 350px;
+  background-color: rgb(150, 28, 69);
+  border-radius: 25px;
+  padding: 40px;
+}
+
+.details .pic {
+  position: absolute;
+  top: -75px;
+}
+
+.software__icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.software__item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: 'Candara', sans-serif;
+  color: #fff;
+}
+
+.software__item img {
+  width: 60px;
+}
+
+.software__item:hover {
+  transform: scale(1.3);
+  transition: transform 0.3s ease;
+}
+
+.about {
+  width: 100%;
+  text-align: center;
+}
+
+.about img {
+  max-width: 100%;
+  height: auto;
+}
+
+.parallax {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: url('/sparkle.png') repeat;
+  animation: slide 60s linear infinite;
+  opacity: 0.15;
+  z-index: -1;
+}
+
+.parallax--fast {
+  animation-duration: 30s;
+  opacity: 0.25;
+}
+
+.page-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(255, 249, 249);
+  z-index: -10;
+}
+
+p {
+  font-size: 27px;
+  font-family: 'Candara', sans-serif;
+  color: white;
+  text-align: justify;
+}
+
+span {
+  font-family: 'Candara', sans-serif;
+  font-size: 20px;
+}
+
+@keyframes slide {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -2048px 0;
+  }
+}
+
+/* 🔁 Responsive Adjustments */
+@media (max-width: 1024px) {
+  .body-container {
+    flex-direction: column;
+    gap: 3rem;
   }
 
-  @media (max-width: 768px) {
-    .body-container {
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 50px;
-    }
-
-    .profile-pic,
-    .box,
-    .details {
-      margin: 10px 0;
-    }
-
-    .details {
-      margin-left: 0;
-    }
+  .profile-pic,
+  .box,
+  .details {
+    width: 90%;
+    max-width: 500px;
+    height: auto;
   }
+
+  .box, .details {
+    padding: 20px;
+  }
+
+  .details .pic {
+    position: relative;
+    top: 0;
+    margin-bottom: 1rem;
+  }
+
+  .software__icons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .software__item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .software__item img {
+    width: 50px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  span {
+    font-size: 16px;
+  }
+}
 </style>

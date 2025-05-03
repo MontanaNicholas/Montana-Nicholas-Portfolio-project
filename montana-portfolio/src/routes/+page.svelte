@@ -31,11 +31,11 @@
 
 <style>
   :global(html, body) {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  width: 100%;
-}
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+  }
 
   .page-bg {
     position: fixed;
@@ -71,12 +71,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start; 
     gap: 2rem;
     padding: 2rem;
     min-height: 100vh;
     position: relative;
     z-index: 1;
+    margin-top: 1%; 
   }
 
   .portfolio {
@@ -152,7 +153,6 @@
     box-shadow: 2px 2px 0 #003838;
   }
 
-  /* Responsive Fixes */
   @media (max-width: 768px) {
     .profile-pic {
       width: 300px;
@@ -177,6 +177,10 @@
 
     .portfolio {
       width: 90%;
+    }
+
+    .body-container {
+      margin-top: 0; 
     }
   }
 </style>

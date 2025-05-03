@@ -14,15 +14,30 @@
     
     <div class="page-bg"></div>
     
+    <div class="body-container">
     <div class="card">
         <img src="{base}/CV.png" alt="cv " class="cv">
     </div>
+</div>
 
 
     <div class="parallax parallax--fast"></div>
 
 
 <style>
+
+.body-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+    
+  }
 
 .card {
 
@@ -32,7 +47,7 @@ border-radius: 20px;
 overflow: hidden;
 width: 100%;
 max-width: 755px;
-margin-left: 30%;
+margin-left: 1%;
 box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 padding: 10px;
 }
@@ -66,6 +81,22 @@ padding: 10px;
     width: 100vw;
     background-color:  rgb(255, 248, 246);
     z-index: -1; 
+}
+
+@media (max-width: 768px) {
+      .body-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        gap: 2rem;
+      }
+  
+      .card  {
+        width: 100%;
+        max-width: 90%;
+        height: auto;
+      }
+  
 }
 
 </style>
