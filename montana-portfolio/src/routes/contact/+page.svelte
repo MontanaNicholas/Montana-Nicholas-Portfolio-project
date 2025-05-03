@@ -22,7 +22,7 @@ import { base } from '$app/paths';
             <ul class="contact__icons">
                 <li class="contact__item">
                     <img src="{base}/instagram.png" alt="instagram" />
-                    <a href="{base}/https://www.instagram.com/_tiny__things" target="_blank" rel="noopener">
+                    <a href="https://www.instagram.com/_tiny__things" target="_blank" rel="noopener">
                         _tiny__things
                       </a>
                   </li>

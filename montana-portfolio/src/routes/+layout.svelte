@@ -19,6 +19,7 @@
     <nav>
         <ul>
             <li><a href="{base}/">HOME</a></li>
+            <li><a href="{base}/cv">CV</a></li>
             <li><a href="{base}/projects">PROJECTS</a></li>
             <li><a href="{base}/education">EDUCATION & VOLUNTEERING</a></li>
             <li><a href="{base}/contact">CONTACT</a></li>

@@ -17,10 +17,8 @@
    
     <p> Hi! My name is Montana Nicholas. I was born in Zimbabwe, and am now living in Ireland. I am currently a student at SETU Carlow studying Interactive Digital Art and Design.</p>
 
-    <b> 
     <p> I am looking to find a career around Digital Art (2D, 3D or Pixel), Concept Art, Comic-Book Art, Animation, Graphic Design etc.</p>
-    </b>
-    
+  
     </div>
 
 
@@ -167,19 +165,21 @@
     border: 4px solid  rgb(150, 28, 69);
   }
 
-p {
-    
-    font-size: 27px;
-     font-family: 'Candara', sans-serif;
-    color: white;
-    text-align: justify;
+  :global(body) {
+  font-family: 'Candara', sans-serif;
+  color: white;
+}
 
+  p {
+    text-align: justify;
+    margin-bottom: 1rem;
+    font-size: 26px;
+    line-height: 1.5;
   }
 
   span {
-
-    font-family: 'Candara', sans-serif;
-    font-size: 20px;
+    font-size: 22px;
+    line-height: 1.5;
   }
 
 .box {
