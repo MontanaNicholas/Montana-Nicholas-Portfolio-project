@@ -28,7 +28,7 @@
 <button on:click={goBack} class="back-button">
     ⬅ Go Back
 </button>
-
+<div class="body-container">
 <div class="grid">
     
     <div class="card">
@@ -68,6 +68,7 @@
         </div>
     </div>
 </div>
+</div>
 
 <div class="parallax parallax--fast"></div>
 
@@ -83,6 +84,17 @@
     background-color: rgb(255, 248, 246);
     z-index: -1;
 }
+
+.body-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding: 2rem;
+    margin-top: -2rem; 
+  }
+
 
 .back-button {
     padding: 10px 20px;
@@ -145,11 +157,10 @@
 
 
 .project-image {
-    width: 50%;
-    object-fit: cover;
+  width: 50%;
+  height: auto;
+  object-fit: contain; 
 }
-
-
 
 .card-text {
     background-color: rgb(150, 28, 69);
@@ -176,6 +187,59 @@
     margin-top: 0;
     font-family: Candara;
     
+}
+
+@media (max-width: 768px) {
+  .body-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 2rem;
+  }
+
+  .header img {
+    width: 100%;
+    max-width: 90%;
+    height: auto;
+  }
+
+  .grid {
+    width: 100%;
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  .card {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .project-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+}
+  .card-text {
+    width: 100%;
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  .card-text h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .card-text p {
+    font-size: 18px;
+  }
+
+  .back-button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
 }
 
 </style>

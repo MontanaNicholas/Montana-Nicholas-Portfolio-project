@@ -12,14 +12,12 @@
     }
   }
 
-
-    onMount(() => {
-        console.log("3d digital art Page Loaded");
-    })
+  onMount(() => {
+    console.log("3d digital art Page Loaded");
+  })
 </script>
 
 <div class="page-bg"></div>
-
 
 <div class="header">
     <img src="{base}/2d-digital-art.png" alt="2d-digital-art" width="500" height="60">
@@ -29,90 +27,94 @@
   ⬅ Go Back
 </button>
 
-<div class="gallery-grid">
-
+<div class="body-container">
+  <div class="gallery-grid">
     <div class="card" style="grid-area: rats;">
       <img src="{base}/rats.png" alt="Recycling Rats Concept Art" class="project-image">
       <div class="card-text">
         <h2>RECYCLING RATS CONCEPT ART</h2>
         <p>This is Concept Art we were asked to create for 4th Year Game Development students, for a game called "Recycling Rats", which is a 2D and 3D digital art brawler game, where rats build vehicles and weapons and fight to the death for ownership of the fridge.</p>
-        
         <br><h3><strong>Art Software Used:</strong> Krita</h3><br>
-     
       </div>
     </div>
-  
+
     <div class="card card--vit" style="grid-area: vit;">
       <img src="{base}/vit.png" alt="vit" class="project-image">
       <div class="card-text">
         <h3><strong>Art Software Used:</strong> Krita</h3>
       </div>
     </div>
-  
+
     <div class="card card--megan" style="grid-area: megan;">
       <img src="{base}/megan.png" alt="megan" class="project-image">
       <div class="card-text">
         <h3><strong>Art Software Used:</strong> Krita</h3>
       </div>
     </div>
-  
-      
+
     <div class="card" style="grid-area: sean;">
-        <img src="{base}/sean progress.png" alt="sean" class="project-image">
-        <div class="card-text">
-            <p>-Unfinished-</p>
-          <h3><strong>Art Software Used:</strong> Krita</h3>
-        </div>
+      <img src="{base}/sean progress.png" alt="sean" class="project-image">
+      <div class="card-text">
+        <p>-Unfinished-</p>
+        <h3><strong>Art Software Used:</strong> Krita</h3>
       </div>
-      
+    </div>
   </div>
-  
+</div>
+
 <div class="parallax parallax--fast"></div>
 
 <style>
-
 .page-bg { 
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    background-color: rgb(255, 248, 246);
-    z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(255, 248, 246);
+  z-index: -1;
+}
+
+.body-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 2rem;
+  margin-top: -2rem; 
 }
 
 .back-button {
-    padding: 10px 20px;
-    background-color: #961c45;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin: 20px;
-  }
+  padding: 10px 20px;
+  background-color: #961c45;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 20px;
+}
 
-  .back-button:hover {
-    background-color: #7a1738;
-  }
+.back-button:hover {
+  background-color: #7a1738;
+}
 
-  
 .parallax {
-    position: fixed; inset: 0; pointer-events: none;
-    background: url('/sparkle.png') repeat;
-    animation: slide 60s linear infinite;
-    opacity: .15;
-    z-index: -1; 
+  position: fixed; inset: 0; pointer-events: none;
+  background: url('/sparkle.png') repeat;
+  animation: slide 60s linear infinite;
+  opacity: .15;
+  z-index: -1; 
 }
 .parallax--fast { animation-duration: 30s; opacity: .25; }
 @keyframes slide { from { background-position: 0 0 } to { background-position: -2048px 0 } }
 
 .header {
-    text-align: center;
-    margin-top: 40px;
+  text-align: center;
+  margin-top: 40px;
 }
-
 
 .gallery-grid {
   display: grid;
@@ -139,10 +141,9 @@
 }
 
 .card:hover {
-    transform: scale(1.03);
-    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+  transform: scale(1.03);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
 }
-
 
 .card--megan {
   height: 500px; 
@@ -171,7 +172,6 @@
   height: 30%;   
   padding: 10px;
 }
-
 
 .project-image {
   width: 100%;
@@ -203,4 +203,61 @@
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .body-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 2rem;
+  }
+
+  .header img {
+    width: 100%;
+    max-width: 90%;
+    height: auto;
+  }
+
+  .gallery-grid {
+    width: 100%;
+    padding: 20px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "rats"
+      "vit"
+      "megan"
+      "sean";
+    gap: 20px; 
+  }
+
+  .card {
+    width: 100%;
+    height: auto; 
+  }
+
+  .project-image {
+    width: 100%; 
+    height: auto;
+    object-fit: contain; 
+  }
+
+  .card-text {
+    width: 100%;
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  .card-text h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .card-text p {
+    font-size: 18px;
+  }
+
+  .back-button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
 </style>

@@ -130,12 +130,6 @@ p{
 
 }
 
-.box h4:first-child,
-.box2 h4:first-child {
-    margin-top: -5px;
-}
-
-
 
 .parallax {
   position: fixed; inset: 0; pointer-events: none;
