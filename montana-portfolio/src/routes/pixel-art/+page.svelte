@@ -27,6 +27,7 @@
     ⬅ Go Back
 </button>
 
+<div class="body-container">
 <div class="gif-gallery">
    
     <div class="gif-row">
@@ -49,6 +50,7 @@
         </div>
     </div>
     </div>
+</div>
 
 <div class="parallax parallax--fast"></div>
 
@@ -59,6 +61,17 @@
     text-align: center;
     margin-top: 40px;
 }
+
+.body-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding: 2rem;
+    margin-top: -2rem; 
+  }
+
 
 .back-button {
     padding: 10px 20px;
@@ -164,5 +177,24 @@
     z-index: -1; 
 }
 
+@media (max-width: 768px) {
+  .body-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 2rem;
+  }
 
+  .header img {
+    width: 100%;
+    max-width: 90%;
+    height: auto;
+  }
+
+  .gif-gallery {
+    width: 100%;
+    max-width: 90%;
+    padding: 20px;
+  }
+}
 </style>
